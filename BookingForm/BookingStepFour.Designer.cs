@@ -169,7 +169,7 @@
             this.additionLabel.Name = "additionLabel";
             this.additionLabel.Size = new System.Drawing.Size(720, 50);
             this.additionLabel.TabIndex = 18;
-            this.additionLabel.Text = "Additional Details";
+            this.additionLabel.Text = "Additional Details:";
             this.additionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // additionalInput

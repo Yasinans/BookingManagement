@@ -36,6 +36,7 @@
             this.clientHeader = new BookingManagement.ClientHeader();
             this.bookingStepThree1 = new BookingManagement.BookingForm.BookingStepThree();
             this.bookingStepFour1 = new BookingManagement.BookingForm.BookingStepFour();
+            this.bookingFinal1 = new BookingManagement.BookingForm.BookingFinal();
             this.SuspendLayout();
             // 
             // welcomeLabel
@@ -52,12 +53,11 @@
             // 
             // bookingStepTwo1
             // 
-            this.bookingStepTwo1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.bookingStepTwo1.BackColor = System.Drawing.Color.Transparent;
-            this.bookingStepTwo1.Location = new System.Drawing.Point(0, 76);
+            this.bookingStepTwo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepTwo1.Location = new System.Drawing.Point(0, 579);
             this.bookingStepTwo1.Name = "bookingStepTwo1";
-            this.bookingStepTwo1.Size = new System.Drawing.Size(1350, 503);
+            this.bookingStepTwo1.Size = new System.Drawing.Size(1334, 2);
             this.bookingStepTwo1.TabIndex = 16;
             // 
             // bookingStepOne
@@ -97,17 +97,27 @@
             // 
             // bookingStepThree1
             // 
-            this.bookingStepThree1.Location = new System.Drawing.Point(0, 76);
+            this.bookingStepThree1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepThree1.Location = new System.Drawing.Point(0, 579);
             this.bookingStepThree1.Name = "bookingStepThree1";
-            this.bookingStepThree1.Size = new System.Drawing.Size(1350, 503);
+            this.bookingStepThree1.Size = new System.Drawing.Size(1334, 2);
             this.bookingStepThree1.TabIndex = 17;
             // 
             // bookingStepFour1
             // 
-            this.bookingStepFour1.Location = new System.Drawing.Point(0, 76);
+            this.bookingStepFour1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepFour1.Location = new System.Drawing.Point(0, 579);
             this.bookingStepFour1.Name = "bookingStepFour1";
-            this.bookingStepFour1.Size = new System.Drawing.Size(1350, 503);
+            this.bookingStepFour1.Size = new System.Drawing.Size(1334, 2);
             this.bookingStepFour1.TabIndex = 18;
+            // 
+            // bookingFinal1
+            // 
+            this.bookingFinal1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingFinal1.Location = new System.Drawing.Point(0, 579);
+            this.bookingFinal1.Name = "bookingFinal1";
+            this.bookingFinal1.Size = new System.Drawing.Size(1334, 2);
+            this.bookingFinal1.TabIndex = 19;
             // 
             // ClientForm
             // 
@@ -115,6 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1334, 684);
+            this.Controls.Add(this.bookingFinal1);
             this.Controls.Add(this.bookingStepFour1);
             this.Controls.Add(this.bookingStepThree1);
             this.Controls.Add(this.bookingStepTwo1);
@@ -138,6 +149,7 @@
         private BookingForm.BookingStepTwo bookingStepTwo1;
         private BookingForm.BookingStepThree bookingStepThree1;
         private BookingForm.BookingStepFour bookingStepFour1;
+        private BookingForm.BookingFinal bookingFinal1;
     }
 }
 
