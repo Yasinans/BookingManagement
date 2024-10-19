@@ -122,12 +122,6 @@
     <Compile Include="ClientFooter.Designer.cs">
       <DependentUpon>ClientFooter.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientHeader.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ClientHeader.Designer.cs">
-      <DependentUpon>ClientHeader.cs</DependentUpon>
-    </Compile>
     <Compile Include="ClientForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientFooter.resx">
       <DependentUpon>ClientFooter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientHeader.resx">
-      <DependentUpon>ClientHeader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm.resx">
       <DependentUpon>ClientForm.cs</DependentUpon>

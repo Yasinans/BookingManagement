@@ -18,6 +18,7 @@ namespace BookingManagement
             this.bookingStepOne.Hide();
             this.homePanel.Hide();
             this.homePanel.bookButtonClicked += HomePanel_BookClicked;
+            currentDateLabel.Text = DateTime.Now.ToString("MMMM dd, yyyy   h:mm tt");
         }
 
         private void HomePanel_BookClicked(object sender, EventArgs e)
@@ -25,7 +26,10 @@ namespace BookingManagement
             this.homePanel.Hide();
             this.bookingStepOne.Show();
         }
-
+        private void dateTimer_Tick(object sender, EventArgs e)
+        {
+            currentDateLabel.Text = DateTime.Now.ToString("MMMM dd, yyyy   h:mm tt");
+        }
         private void LoadStepOne()
         {
 
