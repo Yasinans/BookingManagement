@@ -14,8 +14,11 @@ namespace BookingManagement.BookingForm
     public partial class BookingStepTwo : UserControl
     {
 
+        public event EventHandler proceedButtonClick;
+
         string Occupation;
         string Department;
+
         Dictionary<int, Guna2GradientButton> DepartmentButtons;
         public BookingStepTwo()
         {
@@ -37,8 +40,13 @@ namespace BookingManagement.BookingForm
             this.facultyPanel.FillColor2 = System.Drawing.Color.Transparent;
             this.staffPanel.FillColor = System.Drawing.Color.Transparent;
             this.staffPanel.FillColor2 = System.Drawing.Color.Transparent;
+            this.proceedButton.Click += (sender, e) => OnProceedButtonclick(e);
         }
 
+        protected virtual void OnProceedButtonclick(EventArgs e)
+        {
+            proceedButtonClick?.Invoke(this, e);
+        }
         public void OnInputUpdated(String newValue)
         {
             nameInput.Text = newValue;

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookingManagement.BookingForm
+namespace BookingManagement.ScheduleForm
 {
-    public partial class FacilityCard : UserControl
+    public partial class ScheduleTwo : UserControl
     {
-        public FacilityCard()
+        public ScheduleTwo()
         {
             InitializeComponent();
         }

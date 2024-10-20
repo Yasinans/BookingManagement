@@ -1,4 +1,4 @@
-﻿namespace BookingManagement.BookingForm
+﻿namespace BookingManagement
 {
     partial class FacilityCard
     {
@@ -30,9 +30,9 @@
         {
             this.bookFacilityButton = new Guna.UI2.WinForms.Guna2ImageButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.bookLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bookNowButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.bookLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,19 +72,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(497, 220);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
-            // bookLabel
-            // 
-            this.bookLabel.AutoSize = true;
-            this.bookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.bookLabel.Location = new System.Drawing.Point(13, 10);
-            this.bookLabel.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-            this.bookLabel.Name = "bookLabel";
-            this.bookLabel.Size = new System.Drawing.Size(133, 40);
-            this.bookLabel.TabIndex = 2;
-            this.bookLabel.Text = "Facility#1";
-            this.bookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -94,7 +81,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 81);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Status:  Booked\r\nBooked by: Test T. Test\r\nBooking Details: Test Description";
+            this.label1.Text = "Current Status:  Booked\r\nBooked by: Test T. Test\r\nBooking Details: Test Descripti" +
+    "on";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // bookNowButton
@@ -114,9 +102,22 @@
             this.bookNowButton.Location = new System.Drawing.Point(13, 146);
             this.bookNowButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
             this.bookNowButton.Name = "bookNowButton";
-            this.bookNowButton.Size = new System.Drawing.Size(177, 42);
+            this.bookNowButton.Size = new System.Drawing.Size(192, 42);
             this.bookNowButton.TabIndex = 4;
             this.bookNowButton.Text = "Book Now";
+            // 
+            // bookLabel
+            // 
+            this.bookLabel.AutoSize = true;
+            this.bookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.bookLabel.Location = new System.Drawing.Point(13, 10);
+            this.bookLabel.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.bookLabel.Name = "bookLabel";
+            this.bookLabel.Size = new System.Drawing.Size(133, 40);
+            this.bookLabel.TabIndex = 2;
+            this.bookLabel.Text = "Facility#1";
+            this.bookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FacilityCard
             // 

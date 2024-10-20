@@ -39,18 +39,6 @@
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core.WinForms, Version=27.1462.53.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>packages\Syncfusion.Core.WinForms.27.1.53\lib\net462\Syncfusion.Core.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing, Version=27.1462.53.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <HintPath>packages\Syncfusion.Licensing.27.1.53\lib\net462\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfInput.WinForms, Version=27.1462.53.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>packages\Syncfusion.SfInput.WinForms.27.1.53\lib\net462\Syncfusion.SfInput.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Base, Version=27.1462.53.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>packages\Syncfusion.Shared.Base.27.1.53\lib\net462\Syncfusion.Shared.Base.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -104,10 +92,10 @@
     <Compile Include="BookingForm\BookingStepTwo.Designer.cs">
       <DependentUpon>BookingStepTwo.cs</DependentUpon>
     </Compile>
-    <Compile Include="BookingForm\FacilityCard.cs">
+    <Compile Include="FacilityCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BookingForm\FacilityCard.Designer.cs">
+    <Compile Include="FacilityCard.Designer.cs">
       <DependentUpon>FacilityCard.cs</DependentUpon>
     </Compile>
     <Compile Include="BookingForm\SchedulePicker.cs">
@@ -136,6 +124,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheduleForm\BookingCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleForm\BookingCard.Designer.cs">
+      <DependentUpon>BookingCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleForm\ScheduleOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleForm\ScheduleOne.Designer.cs">
+      <DependentUpon>ScheduleOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleForm\ScheduleTwo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScheduleForm\ScheduleTwo.Designer.cs">
+      <DependentUpon>ScheduleTwo.cs</DependentUpon>
+    </Compile>
     <Compile Include="TouchKeyboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,7 +164,7 @@
     <EmbeddedResource Include="BookingForm\BookingStepTwo.resx">
       <DependentUpon>BookingStepTwo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BookingForm\FacilityCard.resx">
+    <EmbeddedResource Include="FacilityCard.resx">
       <DependentUpon>FacilityCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookingForm\SchedulePicker.resx">
@@ -183,6 +189,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ScheduleForm\BookingCard.resx">
+      <DependentUpon>BookingCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleForm\ScheduleOne.resx">
+      <DependentUpon>ScheduleOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleForm\ScheduleTwo.resx">
+      <DependentUpon>ScheduleTwo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TouchKeyboard.resx">
       <DependentUpon>TouchKeyboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +229,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

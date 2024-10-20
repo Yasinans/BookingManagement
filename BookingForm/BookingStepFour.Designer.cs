@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.progressPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.additionLabel = new System.Windows.Forms.Label();
             this.additionalInput = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.bookLabel = new System.Windows.Forms.Label();
-            this.touchKeyboard = new BookingManagement.TouchKeyboard();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.touchKeyboard = new BookingManagement.TouchKeyboard();
             this.progressPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -73,20 +73,6 @@
             this.progressPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.progressPanel.Size = new System.Drawing.Size(1350, 56);
             this.progressPanel.TabIndex = 2;
-            // 
-            // guna2ShadowPanel4
-            // 
-            this.guna2ShadowPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(920, 19);
-            this.guna2ShadowPanel4.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
-            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            this.guna2ShadowPanel4.Radius = 2;
-            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
-            this.guna2ShadowPanel4.ShadowDepth = 0;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(185, 17);
-            this.guna2ShadowPanel4.TabIndex = 3;
             // 
             // guna2ShadowPanel2
             // 
@@ -129,6 +115,20 @@
             this.guna2ShadowPanel1.ShadowDepth = 20;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(185, 17);
             this.guna2ShadowPanel1.TabIndex = 0;
+            // 
+            // guna2ShadowPanel4
+            // 
+            this.guna2ShadowPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
+            this.guna2ShadowPanel4.Location = new System.Drawing.Point(920, 19);
+            this.guna2ShadowPanel4.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
+            this.guna2ShadowPanel4.Radius = 2;
+            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
+            this.guna2ShadowPanel4.ShadowDepth = 0;
+            this.guna2ShadowPanel4.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel4.TabIndex = 3;
             // 
             // splitContainer1
             // 
@@ -224,6 +224,37 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(551, 447);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.label2, 2);
+            this.label2.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.label2.Location = new System.Drawing.Point(79, 172);
+            this.label2.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 192);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Date of Use:\r\n         Start: Oct 25, 2024\r\n         End: Oct 29, 2024\r\nTime of U" +
+    "se:\r\n         Start: 7:00 AM\r\n         End: 9:00 AM\r\nReccurence: Daily\r\nPurpose:" +
+    " Examination";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.label1, 2);
+            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.label1.Location = new System.Drawing.Point(79, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(308, 72);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Requester’s Name: Test T. Test\r\nDepartment: College of Arts and Science\r\nOccupati" +
+    "on: Student";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // guna2VSeparator1
             // 
             this.guna2VSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
@@ -250,16 +281,6 @@
             this.bookLabel.Text = "Booking Confirmation:";
             this.bookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // touchKeyboard
-            // 
-            this.touchKeyboard.BackColor = System.Drawing.Color.Transparent;
-            this.touchKeyboard.Input = null;
-            this.touchKeyboard.Location = new System.Drawing.Point(153, 116);
-            this.touchKeyboard.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.touchKeyboard.Name = "touchKeyboard";
-            this.touchKeyboard.Size = new System.Drawing.Size(626, 291);
-            this.touchKeyboard.TabIndex = 20;
-            // 
             // guna2Separator1
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.guna2Separator1, 2);
@@ -271,41 +292,21 @@
             this.guna2Separator1.Size = new System.Drawing.Size(489, 10);
             this.guna2Separator1.TabIndex = 4;
             // 
-            // label1
+            // touchKeyboard
             // 
-            this.label1.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label1, 2);
-            this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label1.Location = new System.Drawing.Point(79, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 72);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Requester’s Name: Test T. Test\r\nDepartment: College of Arts and Science\r\nOccupati" +
-    "on: Student";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label2, 2);
-            this.label2.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label2.Location = new System.Drawing.Point(79, 172);
-            this.label2.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 192);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Date of Use:\r\n         Start: Oct 25, 2024\r\n         End: Oct 29, 2024\r\nTime of U" +
-    "se:\r\n         Start: 7:00 AM\r\n         End: 9:00 AM\r\nReccurence: Daily\r\nPurpose:" +
-    " Examination";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.touchKeyboard.BackColor = System.Drawing.Color.Transparent;
+            this.touchKeyboard.Input = null;
+            this.touchKeyboard.Location = new System.Drawing.Point(153, 116);
+            this.touchKeyboard.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.touchKeyboard.Name = "touchKeyboard";
+            this.touchKeyboard.Size = new System.Drawing.Size(626, 291);
+            this.touchKeyboard.TabIndex = 20;
             // 
             // BookingStepFour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.progressPanel);
             this.Name = "BookingStepFour";

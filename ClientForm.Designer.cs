@@ -29,57 +29,105 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.welcomeLabel = new System.Windows.Forms.Label();
-            this.bookingStepTwo1 = new BookingManagement.BookingForm.BookingStepTwo();
-            this.bookingStepOne = new BookingManagement.BookingForm.BookingStepOne();
-            this.homePanel = new BookingManagement.HomePanel();
-            this.clientFooter = new BookingManagement.ClientFooter();
-            this.bookingStepThree1 = new BookingManagement.BookingForm.BookingStepThree();
-            this.bookingStepFour1 = new BookingManagement.BookingForm.BookingStepFour();
-            this.bookingFinal1 = new BookingManagement.BookingForm.BookingFinal();
             this.headerPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.currentDateLabel = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.returnButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dateTimer = new System.Windows.Forms.Timer(this.components);
+            this.clientFooter = new BookingManagement.ClientFooter();
+            this.bookingStepOne = new BookingManagement.BookingForm.BookingStepOne();
+            this.bookingStepTwo = new BookingManagement.BookingForm.BookingStepTwo();
+            this.bookingStepThree = new BookingManagement.BookingForm.BookingStepThree();
+            this.bookingStepFour = new BookingManagement.BookingForm.BookingStepFour();
+            this.bookingFinal = new BookingManagement.BookingForm.BookingFinal();
+            this.scheduleTwo = new BookingManagement.ScheduleForm.ScheduleTwo();
+            this.homePanel = new BookingManagement.HomePanel();
+            this.scheduleOne = new BookingManagement.ScheduleForm.ScheduleOne();
             this.headerPanel.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // headerPanel
+            // 
+            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
+            this.headerPanel.Controls.Add(this.tableLayoutPanel1);
+            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerPanel.Location = new System.Drawing.Point(0, 0);
+            this.headerPanel.Name = "headerPanel";
+            this.headerPanel.Size = new System.Drawing.Size(1334, 81);
+            this.headerPanel.TabIndex = 20;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.33206F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.66794F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 316F));
+            this.tableLayoutPanel1.Controls.Add(this.currentDateLabel, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.welcomeLabel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.returnButton, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1334, 81);
+            this.tableLayoutPanel1.TabIndex = 7;
+            // 
+            // currentDateLabel
+            // 
+            this.currentDateLabel.AutoSize = true;
+            this.currentDateLabel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.currentDateLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentDateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.currentDateLabel.Location = new System.Drawing.Point(1020, 0);
+            this.currentDateLabel.Name = "currentDateLabel";
+            this.currentDateLabel.Size = new System.Drawing.Size(54, 81);
+            this.currentDateLabel.TabIndex = 6;
+            this.currentDateLabel.Text = "Date";
+            this.currentDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // welcomeLabel
             // 
-            this.welcomeLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.welcomeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.welcomeLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
             this.welcomeLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.ForeColor = System.Drawing.Color.White;
-            this.welcomeLabel.Location = new System.Drawing.Point(483, 10);
+            this.welcomeLabel.Location = new System.Drawing.Point(250, 16);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(374, 48);
-            this.welcomeLabel.TabIndex = 2;
+            this.welcomeLabel.Size = new System.Drawing.Size(764, 48);
+            this.welcomeLabel.TabIndex = 3;
             this.welcomeLabel.Text = "Welcome to EduReserve!";
+            this.welcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bookingStepTwo1
+            // returnButton
             // 
-            this.bookingStepTwo1.BackColor = System.Drawing.Color.Transparent;
-            this.bookingStepTwo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookingStepTwo1.Location = new System.Drawing.Point(0, 584);
-            this.bookingStepTwo1.Name = "bookingStepTwo1";
-            this.bookingStepTwo1.Size = new System.Drawing.Size(1334, 0);
-            this.bookingStepTwo1.TabIndex = 16;
+            this.returnButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.returnButton.BorderColor = System.Drawing.Color.Gainsboro;
+            this.returnButton.BorderRadius = 5;
+            this.returnButton.BorderThickness = 1;
+            this.returnButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.returnButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.returnButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.returnButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.returnButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.returnButton.FillColor = System.Drawing.Color.Empty;
+            this.returnButton.FillColor2 = System.Drawing.Color.Transparent;
+            this.returnButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.returnButton.ForeColor = System.Drawing.Color.White;
+            this.returnButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.returnButton.Image = global::BookingManagement.Properties.Resources._return;
+            this.returnButton.Location = new System.Drawing.Point(10, 13);
+            this.returnButton.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.returnButton.Name = "returnButton";
+            this.returnButton.Size = new System.Drawing.Size(54, 54);
+            this.returnButton.TabIndex = 7;
+            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
-            // bookingStepOne
+            // dateTimer
             // 
-            this.bookingStepOne.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookingStepOne.Location = new System.Drawing.Point(0, 584);
-            this.bookingStepOne.Name = "bookingStepOne";
-            this.bookingStepOne.Size = new System.Drawing.Size(1334, 0);
-            this.bookingStepOne.TabIndex = 15;
-            // 
-            // homePanel
-            // 
-            this.homePanel.BackColor = System.Drawing.Color.Transparent;
-            this.homePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.homePanel.Location = new System.Drawing.Point(0, 81);
-            this.homePanel.Name = "homePanel";
-            this.homePanel.Size = new System.Drawing.Size(1334, 503);
-            this.homePanel.TabIndex = 14;
+            this.dateTimer.Interval = 1000;
             // 
             // clientFooter
             // 
@@ -91,56 +139,73 @@
             this.clientFooter.Size = new System.Drawing.Size(1334, 103);
             this.clientFooter.TabIndex = 13;
             // 
-            // bookingStepThree1
+            // bookingStepOne
             // 
-            this.bookingStepThree1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookingStepThree1.Location = new System.Drawing.Point(0, 584);
-            this.bookingStepThree1.Name = "bookingStepThree1";
-            this.bookingStepThree1.Size = new System.Drawing.Size(1334, 0);
-            this.bookingStepThree1.TabIndex = 17;
+            this.bookingStepOne.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepOne.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepOne.Name = "bookingStepOne";
+            this.bookingStepOne.Size = new System.Drawing.Size(1334, 0);
+            this.bookingStepOne.TabIndex = 15;
             // 
-            // bookingStepFour1
+            // bookingStepTwo
             // 
-            this.bookingStepFour1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookingStepFour1.Location = new System.Drawing.Point(0, 584);
-            this.bookingStepFour1.Name = "bookingStepFour1";
-            this.bookingStepFour1.Size = new System.Drawing.Size(1334, 0);
-            this.bookingStepFour1.TabIndex = 18;
+            this.bookingStepTwo.BackColor = System.Drawing.Color.Transparent;
+            this.bookingStepTwo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepTwo.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepTwo.Name = "bookingStepTwo";
+            this.bookingStepTwo.Size = new System.Drawing.Size(1334, 0);
+            this.bookingStepTwo.TabIndex = 16;
             // 
-            // bookingFinal1
+            // bookingStepThree
             // 
-            this.bookingFinal1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookingFinal1.Location = new System.Drawing.Point(0, 584);
-            this.bookingFinal1.Name = "bookingFinal1";
-            this.bookingFinal1.Size = new System.Drawing.Size(1334, 0);
-            this.bookingFinal1.TabIndex = 19;
+            this.bookingStepThree.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepThree.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepThree.Name = "bookingStepThree";
+            this.bookingStepThree.Size = new System.Drawing.Size(1334, 0);
+            this.bookingStepThree.TabIndex = 17;
             // 
-            // headerPanel
+            // bookingStepFour
             // 
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.headerPanel.Controls.Add(this.currentDateLabel);
-            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.Location = new System.Drawing.Point(0, 0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1334, 81);
-            this.headerPanel.TabIndex = 20;
+            this.bookingStepFour.BackColor = System.Drawing.Color.Transparent;
+            this.bookingStepFour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingStepFour.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepFour.Name = "bookingStepFour";
+            this.bookingStepFour.Size = new System.Drawing.Size(1334, 0);
+            this.bookingStepFour.TabIndex = 18;
             // 
-            // currentDateLabel
+            // bookingFinal
             // 
-            this.currentDateLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.currentDateLabel.AutoSize = true;
-            this.currentDateLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentDateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.currentDateLabel.Location = new System.Drawing.Point(1051, 26);
-            this.currentDateLabel.Name = "currentDateLabel";
-            this.currentDateLabel.Size = new System.Drawing.Size(54, 29);
-            this.currentDateLabel.TabIndex = 6;
-            this.currentDateLabel.Text = "Date";
-            this.currentDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bookingFinal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookingFinal.Location = new System.Drawing.Point(0, 584);
+            this.bookingFinal.Name = "bookingFinal";
+            this.bookingFinal.Size = new System.Drawing.Size(1334, 0);
+            this.bookingFinal.TabIndex = 19;
             // 
-            // dateTimer
+            // scheduleTwo
             // 
-            this.dateTimer.Interval = 1000;
+            this.scheduleTwo.BackColor = System.Drawing.Color.Transparent;
+            this.scheduleTwo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scheduleTwo.Location = new System.Drawing.Point(0, 584);
+            this.scheduleTwo.Name = "scheduleTwo";
+            this.scheduleTwo.Size = new System.Drawing.Size(1334, 0);
+            this.scheduleTwo.TabIndex = 22;
+            // 
+            // homePanel
+            // 
+            this.homePanel.BackColor = System.Drawing.Color.Transparent;
+            this.homePanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.homePanel.Location = new System.Drawing.Point(0, 81);
+            this.homePanel.Name = "homePanel";
+            this.homePanel.Size = new System.Drawing.Size(1334, 503);
+            this.homePanel.TabIndex = 14;
+            // 
+            // scheduleOne
+            // 
+            this.scheduleOne.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scheduleOne.Location = new System.Drawing.Point(0, 584);
+            this.scheduleOne.Name = "scheduleOne";
+            this.scheduleOne.Size = new System.Drawing.Size(1334, 0);
+            this.scheduleOne.TabIndex = 23;
             // 
             // ClientForm
             // 
@@ -148,35 +213,41 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1334, 684);
-            this.Controls.Add(this.bookingFinal1);
-            this.Controls.Add(this.bookingStepFour1);
-            this.Controls.Add(this.bookingStepThree1);
-            this.Controls.Add(this.bookingStepTwo1);
+            this.Controls.Add(this.scheduleOne);
+            this.Controls.Add(this.scheduleTwo);
+            this.Controls.Add(this.bookingFinal);
+            this.Controls.Add(this.bookingStepFour);
+            this.Controls.Add(this.bookingStepThree);
+            this.Controls.Add(this.bookingStepTwo);
             this.Controls.Add(this.bookingStepOne);
             this.Controls.Add(this.homePanel);
             this.Controls.Add(this.clientFooter);
-            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.headerPanel);
             this.Name = "ClientForm";
             this.Text = "Form1";
             this.headerPanel.ResumeLayout(false);
-            this.headerPanel.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label welcomeLabel;
         private ClientFooter clientFooter;
-        private HomePanel homePanel;
-        private BookingForm.BookingStepOne bookingStepOne;
-        private BookingForm.BookingStepTwo bookingStepTwo1;
-        private BookingForm.BookingStepThree bookingStepThree1;
-        private BookingForm.BookingStepFour bookingStepFour1;
-        private BookingForm.BookingFinal bookingFinal1;
         private Guna.UI2.WinForms.Guna2Panel headerPanel;
         private System.Windows.Forms.Label currentDateLabel;
         private System.Windows.Forms.Timer dateTimer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label welcomeLabel;
+        private Guna.UI2.WinForms.Guna2GradientButton returnButton;
+        private BookingForm.BookingStepOne bookingStepOne;
+        private BookingForm.BookingStepTwo bookingStepTwo;
+        private BookingForm.BookingStepThree bookingStepThree;
+        private BookingForm.BookingStepFour bookingStepFour;
+        private BookingForm.BookingFinal bookingFinal;
+        private ScheduleForm.ScheduleTwo scheduleTwo;
+        private HomePanel homePanel;
+        private ScheduleForm.ScheduleOne scheduleOne;
     }
 }
 

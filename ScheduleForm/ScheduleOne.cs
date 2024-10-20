@@ -8,15 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookingManagement.BookingForm
+namespace BookingManagement.ScheduleForm
 {
-    public partial class BookingStepOne : UserControl
+    public partial class ScheduleOne : UserControl
     {
         public Dictionary<int, FacilityCard> facilityCards;
-        public BookingStepOne()
+        public ScheduleOne()
         {
             InitializeComponent();
-            //to be edited
             facilityCards = new Dictionary<int, FacilityCard>();
             facilityCards.Add(0, createFacilityCard("Test 1"));
             facilityCards.Add(1, createFacilityCard("Test 2"));
@@ -25,7 +24,7 @@ namespace BookingManagement.BookingForm
 
         private FacilityCard createFacilityCard(string facilityName)
         {
-            FacilityCard facilityCard = new FacilityCard(facilityName, true);
+            FacilityCard facilityCard = new FacilityCard(facilityName, false);
             facilityCard.BackColor = System.Drawing.Color.Transparent;
             facilityCard.Location = new System.Drawing.Point(145, 60);
             facilityCard.Margin = new System.Windows.Forms.Padding(0);
