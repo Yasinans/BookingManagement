@@ -37,12 +37,9 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameInput = new Guna.UI2.WinForms.Guna2TextBox();
-            this.touchKeyboard = new BookingManagement.TouchKeyboard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.staffPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.staffRadioButton = new Guna.UI2.WinForms.Guna2RadioButton();
             this.facultyPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.facultyRadioButton = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.DepartmentLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.placeholderDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -50,8 +47,11 @@
             this.bookLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.studentPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.studentRadioButton = new Guna.UI2.WinForms.Guna2RadioButton();
             this.proceedButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.staffRadioButton = new System.Windows.Forms.RadioButton();
+            this.facultyRadioButton = new System.Windows.Forms.RadioButton();
+            this.studentRadioButton = new System.Windows.Forms.RadioButton();
+            this.touchKeyboard = new BookingManagement.TouchKeyboard();
             this.progressPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -80,10 +80,11 @@
             this.progressPanel.Controls.Add(this.guna2ShadowPanel2, 2, 0);
             this.progressPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.progressPanel.Location = new System.Drawing.Point(0, 0);
+            this.progressPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressPanel.Name = "progressPanel";
             this.progressPanel.RowCount = 1;
             this.progressPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.progressPanel.Size = new System.Drawing.Size(1350, 56);
+            this.progressPanel.Size = new System.Drawing.Size(2025, 86);
             this.progressPanel.TabIndex = 0;
             // 
             // guna2ShadowPanel4
@@ -91,13 +92,13 @@
             this.guna2ShadowPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(920, 19);
-            this.guna2ShadowPanel4.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel4.Location = new System.Drawing.Point(1378, 30);
+            this.guna2ShadowPanel4.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
             this.guna2ShadowPanel4.Radius = 2;
             this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel4.ShadowDepth = 0;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel4.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel4.TabIndex = 3;
             // 
             // guna2ShadowPanel3
@@ -105,13 +106,13 @@
             this.guna2ShadowPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(695, 19);
-            this.guna2ShadowPanel3.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(1041, 30);
+            this.guna2ShadowPanel3.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.Radius = 2;
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel3.ShadowDepth = 0;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel3.TabIndex = 2;
             // 
             // guna2ShadowPanel1
@@ -119,13 +120,13 @@
             this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(118)))), ((int)(((byte)(236)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(245, 19);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(367, 30);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 2;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel1.ShadowDepth = 20;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
             // guna2ShadowPanel2
@@ -133,19 +134,20 @@
             this.guna2ShadowPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(470, 19);
-            this.guna2ShadowPanel2.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(704, 30);
+            this.guna2ShadowPanel2.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 2;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel2.ShadowDepth = 0;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel2.TabIndex = 1;
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 56);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 86);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -155,8 +157,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer1.Size = new System.Drawing.Size(1350, 447);
-            this.splitContainer1.SplitterDistance = 791;
+            this.splitContainer1.Size = new System.Drawing.Size(2025, 688);
+            this.splitContainer1.SplitterDistance = 1186;
+            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -166,9 +169,10 @@
             this.flowLayoutPanel1.Controls.Add(this.touchKeyboard);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(150, 0, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(791, 447);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(225, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1186, 688);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // nameLabel
@@ -176,10 +180,10 @@
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.nameLabel.Location = new System.Drawing.Point(150, 0);
+            this.nameLabel.Location = new System.Drawing.Point(225, 0);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(622, 50);
+            this.nameLabel.Size = new System.Drawing.Size(933, 77);
             this.nameLabel.TabIndex = 18;
             this.nameLabel.Text = "Enter your name:";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -199,8 +203,8 @@
             this.nameInput.Font = new System.Drawing.Font("Plus Jakarta Sans SemiBold", 11F);
             this.nameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.nameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameInput.Location = new System.Drawing.Point(153, 54);
-            this.nameInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.nameInput.Location = new System.Drawing.Point(229, 83);
+            this.nameInput.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.nameInput.MaxLength = 50;
             this.nameInput.Name = "nameInput";
             this.nameInput.PasswordChar = '\0';
@@ -208,27 +212,17 @@
             this.nameInput.PlaceholderText = "";
             this.nameInput.ReadOnly = true;
             this.nameInput.SelectedText = "";
-            this.nameInput.Size = new System.Drawing.Size(626, 48);
+            this.nameInput.Size = new System.Drawing.Size(939, 74);
             this.nameInput.TabIndex = 19;
             this.nameInput.TextOffset = new System.Drawing.Point(6, -5);
             this.nameInput.WordWrap = false;
-            // 
-            // touchKeyboard
-            // 
-            this.touchKeyboard.BackColor = System.Drawing.Color.Transparent;
-            this.touchKeyboard.Input = null;
-            this.touchKeyboard.Location = new System.Drawing.Point(153, 116);
-            this.touchKeyboard.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.touchKeyboard.Name = "touchKeyboard";
-            this.touchKeyboard.Size = new System.Drawing.Size(626, 291);
-            this.touchKeyboard.TabIndex = 20;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.61539F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 309F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 486F));
             this.tableLayoutPanel2.Controls.Add(this.staffPanel, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.facultyPanel, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.guna2VSeparator1, 0, 0);
@@ -239,16 +233,17 @@
             this.tableLayoutPanel2.Controls.Add(this.proceedButton, 2, 6);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(555, 447);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(833, 688);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // staffPanel
@@ -259,36 +254,12 @@
             this.staffPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.staffPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.staffPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.staffPanel.Location = new System.Drawing.Point(40, 354);
+            this.staffPanel.Location = new System.Drawing.Point(57, 546);
+            this.staffPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.staffPanel.Name = "staffPanel";
-            this.staffPanel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.staffPanel.Size = new System.Drawing.Size(202, 39);
+            this.staffPanel.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.staffPanel.Size = new System.Drawing.Size(285, 59);
             this.staffPanel.TabIndex = 16;
-            // 
-            // staffRadioButton
-            // 
-            this.staffRadioButton.AutoSize = true;
-            this.staffRadioButton.CausesValidation = false;
-            this.staffRadioButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.staffRadioButton.CheckedState.BorderThickness = 0;
-            this.staffRadioButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.staffRadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.staffRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.staffRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F);
-            this.staffRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.staffRadioButton.Location = new System.Drawing.Point(20, 0);
-            this.staffRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.staffRadioButton.Name = "staffRadioButton";
-            this.staffRadioButton.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.staffRadioButton.Size = new System.Drawing.Size(182, 39);
-            this.staffRadioButton.TabIndex = 6;
-            this.staffRadioButton.Tag = "Staff";
-            this.staffRadioButton.Text = "  Staff";
-            this.staffRadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.staffRadioButton.UncheckedState.BorderThickness = 1;
-            this.staffRadioButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.staffRadioButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.staffRadioButton.CheckedChanged += new System.EventHandler(this.OnOccupationChanged);
             // 
             // facultyPanel
             // 
@@ -298,48 +269,23 @@
             this.facultyPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.facultyPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.facultyPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.facultyPanel.Location = new System.Drawing.Point(40, 300);
-            this.facultyPanel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
+            this.facultyPanel.Location = new System.Drawing.Point(57, 463);
+            this.facultyPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 11);
             this.facultyPanel.Name = "facultyPanel";
-            this.facultyPanel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.facultyPanel.Size = new System.Drawing.Size(202, 44);
+            this.facultyPanel.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.facultyPanel.Size = new System.Drawing.Size(285, 67);
             this.facultyPanel.TabIndex = 11;
-            // 
-            // facultyRadioButton
-            // 
-            this.facultyRadioButton.AutoSize = true;
-            this.facultyRadioButton.CausesValidation = false;
-            this.facultyRadioButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.facultyRadioButton.CheckedState.BorderThickness = 0;
-            this.facultyRadioButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.facultyRadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.facultyRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.facultyRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F);
-            this.facultyRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.facultyRadioButton.Location = new System.Drawing.Point(20, 0);
-            this.facultyRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.facultyRadioButton.Name = "facultyRadioButton";
-            this.facultyRadioButton.Padding = new System.Windows.Forms.Padding(1, 1, 0, 0);
-            this.facultyRadioButton.Size = new System.Drawing.Size(182, 44);
-            this.facultyRadioButton.TabIndex = 6;
-            this.facultyRadioButton.Tag = "Faculty";
-            this.facultyRadioButton.Text = "  Faculty";
-            this.facultyRadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.facultyRadioButton.UncheckedState.BorderThickness = 1;
-            this.facultyRadioButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.facultyRadioButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.facultyRadioButton.CheckedChanged += new System.EventHandler(this.OnOccupationChanged);
             // 
             // guna2VSeparator1
             // 
             this.guna2VSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.guna2VSeparator1.FillStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.guna2VSeparator1.FillThickness = 2;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(3, 15);
-            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(4, 23);
+            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(4, 23, 4, 5);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.tableLayoutPanel2.SetRowSpan(this.guna2VSeparator1, 7);
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 402);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(15, 618);
             this.guna2VSeparator1.TabIndex = 0;
             // 
             // DepartmentLayoutPanel
@@ -350,9 +296,10 @@
             this.DepartmentLayoutPanel.Controls.Add(this.placeholder2Department);
             this.DepartmentLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DepartmentLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.DepartmentLayoutPanel.Location = new System.Drawing.Point(40, 70);
+            this.DepartmentLayoutPanel.Location = new System.Drawing.Point(57, 108);
+            this.DepartmentLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DepartmentLayoutPanel.Name = "DepartmentLayoutPanel";
-            this.DepartmentLayoutPanel.Size = new System.Drawing.Size(512, 128);
+            this.DepartmentLayoutPanel.Size = new System.Drawing.Size(772, 197);
             this.DepartmentLayoutPanel.TabIndex = 4;
             this.DepartmentLayoutPanel.WrapContents = false;
             // 
@@ -369,10 +316,11 @@
             this.placeholderDepartment.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeholderDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.placeholderDepartment.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.placeholderDepartment.Location = new System.Drawing.Point(3, 3);
+            this.placeholderDepartment.Location = new System.Drawing.Point(4, 5);
+            this.placeholderDepartment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.placeholderDepartment.Name = "placeholderDepartment";
-            this.placeholderDepartment.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.placeholderDepartment.Size = new System.Drawing.Size(457, 45);
+            this.placeholderDepartment.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.placeholderDepartment.Size = new System.Drawing.Size(686, 69);
             this.placeholderDepartment.TabIndex = 0;
             this.placeholderDepartment.Tag = "0";
             this.placeholderDepartment.Text = "College of Computer and Information Science";
@@ -392,10 +340,11 @@
             this.placeholder2Department.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeholder2Department.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.placeholder2Department.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.placeholder2Department.Location = new System.Drawing.Point(3, 54);
+            this.placeholder2Department.Location = new System.Drawing.Point(4, 84);
+            this.placeholder2Department.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.placeholder2Department.Name = "placeholder2Department";
-            this.placeholder2Department.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.placeholder2Department.Size = new System.Drawing.Size(457, 45);
+            this.placeholder2Department.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.placeholder2Department.Size = new System.Drawing.Size(686, 69);
             this.placeholder2Department.TabIndex = 1;
             this.placeholder2Department.Tag = "1";
             this.placeholder2Department.Text = "College of Arts and Science";
@@ -407,10 +356,10 @@
             this.bookLabel.AutoSize = true;
             this.bookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.bookLabel.Location = new System.Drawing.Point(40, 20);
-            this.bookLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.bookLabel.Location = new System.Drawing.Point(57, 31);
+            this.bookLabel.Margin = new System.Windows.Forms.Padding(4, 31, 4, 0);
             this.bookLabel.Name = "bookLabel";
-            this.bookLabel.Size = new System.Drawing.Size(159, 40);
+            this.bookLabel.Size = new System.Drawing.Size(236, 60);
             this.bookLabel.TabIndex = 3;
             this.bookLabel.Text = "Department";
             this.bookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -420,10 +369,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label1.Location = new System.Drawing.Point(37, 201);
+            this.label1.Location = new System.Drawing.Point(53, 310);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 40);
+            this.label1.Size = new System.Drawing.Size(235, 60);
             this.label1.TabIndex = 5;
             this.label1.Text = "Occupation";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -436,39 +385,12 @@
             this.studentPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.studentPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.studentPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.studentPanel.Location = new System.Drawing.Point(40, 244);
-            this.studentPanel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
+            this.studentPanel.Location = new System.Drawing.Point(57, 377);
+            this.studentPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 11);
             this.studentPanel.Name = "studentPanel";
-            this.studentPanel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.studentPanel.Size = new System.Drawing.Size(202, 46);
+            this.studentPanel.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.studentPanel.Size = new System.Drawing.Size(285, 70);
             this.studentPanel.TabIndex = 7;
-            // 
-            // studentRadioButton
-            // 
-            this.studentRadioButton.AutoSize = true;
-            this.studentRadioButton.CausesValidation = false;
-            this.studentRadioButton.Checked = true;
-            this.studentRadioButton.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.studentRadioButton.CheckedState.BorderThickness = 0;
-            this.studentRadioButton.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.studentRadioButton.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.studentRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.studentRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F);
-            this.studentRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.studentRadioButton.Location = new System.Drawing.Point(20, 0);
-            this.studentRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.studentRadioButton.Name = "studentRadioButton";
-            this.studentRadioButton.Padding = new System.Windows.Forms.Padding(1, 1, 0, 0);
-            this.studentRadioButton.Size = new System.Drawing.Size(182, 46);
-            this.studentRadioButton.TabIndex = 6;
-            this.studentRadioButton.TabStop = true;
-            this.studentRadioButton.Tag = "Student";
-            this.studentRadioButton.Text = "  Student";
-            this.studentRadioButton.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.studentRadioButton.UncheckedState.BorderThickness = 1;
-            this.studentRadioButton.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.studentRadioButton.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.studentRadioButton.CheckedChanged += new System.EventHandler(this.OnOccupationChanged);
             // 
             // proceedButton
             // 
@@ -483,24 +405,87 @@
             this.proceedButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(174)))), ((int)(((byte)(243)))));
             this.proceedButton.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedButton.ForeColor = System.Drawing.Color.White;
-            this.proceedButton.Location = new System.Drawing.Point(380, 402);
-            this.proceedButton.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
+            this.proceedButton.Location = new System.Drawing.Point(571, 620);
+            this.proceedButton.Margin = new System.Windows.Forms.Padding(4, 5, 30, 5);
             this.proceedButton.Name = "proceedButton";
-            this.proceedButton.Size = new System.Drawing.Size(155, 38);
+            this.proceedButton.Size = new System.Drawing.Size(232, 58);
             this.proceedButton.TabIndex = 17;
             this.proceedButton.Text = "Proceed";
             this.proceedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.proceedButton.TextOffset = new System.Drawing.Point(5, 0);
             // 
+            // staffRadioButton
+            // 
+            this.staffRadioButton.AutoSize = true;
+            this.staffRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.staffRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F);
+            this.staffRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.staffRadioButton.Location = new System.Drawing.Point(30, 0);
+            this.staffRadioButton.Margin = new System.Windows.Forms.Padding(30, 5, 4, 5);
+            this.staffRadioButton.Name = "staffRadioButton";
+            this.staffRadioButton.Size = new System.Drawing.Size(255, 59);
+            this.staffRadioButton.TabIndex = 0;
+            this.staffRadioButton.TabStop = true;
+            this.staffRadioButton.Tag = "Staff";
+            this.staffRadioButton.Text = "Staff";
+            this.staffRadioButton.UseVisualStyleBackColor = true;
+            this.staffRadioButton.CheckedChanged += new System.EventHandler(this.OnOccupationChanged);
+            // 
+            // facultyRadioButton
+            // 
+            this.facultyRadioButton.AutoSize = true;
+            this.facultyRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.facultyRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F);
+            this.facultyRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.facultyRadioButton.Location = new System.Drawing.Point(30, 0);
+            this.facultyRadioButton.Margin = new System.Windows.Forms.Padding(30, 5, 4, 5);
+            this.facultyRadioButton.Name = "facultyRadioButton";
+            this.facultyRadioButton.Size = new System.Drawing.Size(255, 67);
+            this.facultyRadioButton.TabIndex = 1;
+            this.facultyRadioButton.TabStop = true;
+            this.facultyRadioButton.Tag = "Faculty";
+            this.facultyRadioButton.Text = "Faculty";
+            this.facultyRadioButton.UseVisualStyleBackColor = true;
+            this.facultyRadioButton.CheckedChanged += new System.EventHandler(this.OnOccupationChanged);
+            // 
+            // studentRadioButton
+            // 
+            this.studentRadioButton.AutoSize = true;
+            this.studentRadioButton.Checked = true;
+            this.studentRadioButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.studentRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F);
+            this.studentRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.studentRadioButton.Location = new System.Drawing.Point(30, 0);
+            this.studentRadioButton.Margin = new System.Windows.Forms.Padding(30, 5, 4, 5);
+            this.studentRadioButton.Name = "studentRadioButton";
+            this.studentRadioButton.Size = new System.Drawing.Size(255, 70);
+            this.studentRadioButton.TabIndex = 2;
+            this.studentRadioButton.TabStop = true;
+            this.studentRadioButton.Tag = "Student";
+            this.studentRadioButton.Text = "Student";
+            this.studentRadioButton.UseVisualStyleBackColor = true;
+            this.studentRadioButton.CheckedChanged += new System.EventHandler(this.OnOccupationChanged);
+            // 
+            // touchKeyboard
+            // 
+            this.touchKeyboard.BackColor = System.Drawing.Color.Transparent;
+            this.touchKeyboard.Input = null;
+            this.touchKeyboard.Location = new System.Drawing.Point(229, 178);
+            this.touchKeyboard.Margin = new System.Windows.Forms.Padding(4, 15, 4, 5);
+            this.touchKeyboard.Name = "touchKeyboard";
+            this.touchKeyboard.Size = new System.Drawing.Size(939, 448);
+            this.touchKeyboard.TabIndex = 20;
+            // 
             // BookingStepTwo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.progressPanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BookingStepTwo";
-            this.Size = new System.Drawing.Size(1350, 503);
+            this.Size = new System.Drawing.Size(2025, 774);
             this.progressPanel.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -537,14 +522,14 @@
         private System.Windows.Forms.Label bookLabel;
         private System.Windows.Forms.FlowLayoutPanel DepartmentLayoutPanel;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2RadioButton studentRadioButton;
         private Guna.UI2.WinForms.Guna2GradientPanel studentPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel facultyPanel;
-        private Guna.UI2.WinForms.Guna2RadioButton facultyRadioButton;
         private Guna.UI2.WinForms.Guna2GradientPanel staffPanel;
-        private Guna.UI2.WinForms.Guna2RadioButton staffRadioButton;
         private Guna.UI2.WinForms.Guna2GradientButton placeholderDepartment;
         private Guna.UI2.WinForms.Guna2GradientButton placeholder2Department;
         private Guna.UI2.WinForms.Guna2GradientButton proceedButton;
+        private System.Windows.Forms.RadioButton staffRadioButton;
+        private System.Windows.Forms.RadioButton facultyRadioButton;
+        private System.Windows.Forms.RadioButton studentRadioButton;
     }
 }

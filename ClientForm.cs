@@ -42,26 +42,27 @@ namespace BookingManagement
             this.homePanel.bookButtonClicked += HomePanel_BookClicked;
             this.homePanel.viewButtonClicked += HomePanel_ViewClicked;
             this.bookingStepTwo.proceedButtonClick += BookingStepTwo_ProceedClicked;
-
-            
+            this.bookingStepThree.proceedButtonClick += BookingStepThree_ProceedClicked;
+            this.bookingStepFour.proceedButtonClick += BookingStepFour_ProceedClicked;
             currentDateLabel.Text = DateTime.Now.ToString("MMMM dd, yyyy   h:mm tt");
         }
 
         private void PrepareComponents()
         {
+
             foreach(int i in this.bookingStepOne.facilityCards.Keys){
                 this.bookingStepOne.facilityCards[i].buttonClick += HandleBookingFacilityCards;
             }
-            foreach (int i in this.bookingStepOne.facilityCards.Keys)
+            foreach (int i in this.scheduleOne.facilityCards.Keys)
             {
-                this.bookingStepOne.facilityCards[i].buttonClick += HandleBookingFacilityCards;
+                this.scheduleOne.facilityCards[i].buttonClick += HandleBookingFacilityCards;
             }
         }
         private void HandleBookingFacilityCards(object sender, EventArgs e)
         {
-            Guna2GradientButton facilityCard = (Guna2GradientButton)sender;
+            FacilityCard facilityCard = (FacilityCard)sender;
             currentFacility = (int)facilityCard.Tag;
-            if(facilityCard.Text.Equals("Book Now")){
+            if(facilityCard.isBooking){
                 SwitchPage(2);
             } else
             {
@@ -83,18 +84,35 @@ namespace BookingManagement
         }
         private void returnButton_Click(object sender, EventArgs e)
         {
+            //clear infos after return 
             switch (currentPage)
             {
                 case 1:
                     SwitchPage(0);
                     break;
+                case 2:
+                    SwitchPage(1);
+                    break;
+                case 3:
+                    SwitchPage(2);
+                    break;
+                case 4:
+                    SwitchPage(3);
+                    break;
+                case 5:
+                    SwitchPage(0);
+                    break;
                 case 6:
                     SwitchPage(0);
                     break;
+                case 7:
+                    SwitchPage(6);
+                    break;
+               
             }
         }
 
-        //event handlers
+        //event handlers todo:clean
         private void HomePanel_BookClicked(object sender, EventArgs e)
         {
             SwitchPage(1);
@@ -108,6 +126,14 @@ namespace BookingManagement
         private void BookingStepTwo_ProceedClicked(object sender, EventArgs e)
         {
             SwitchPage(3);
+        }
+        private void BookingStepThree_ProceedClicked(object sender, EventArgs e)
+        {
+            SwitchPage(4);
+        }
+        private void BookingStepFour_ProceedClicked(object sender, EventArgs e)
+        {
+            SwitchPage(5);
         }
         private void dateTimer_Tick(object sender, EventArgs e)
         {

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using BookingManagement.Util;
 
 namespace BookingManagement
 {
@@ -19,8 +13,8 @@ namespace BookingManagement
         {
             InitializeComponent();
 
-            this.bookFacilityButton.Click += (sender, e) => OnBookButtonClicked(e);
-            this.viewScheduleButton.Click += (sender, e) => OnViewButtonClicked(e);
+            this.BookFacilityButton.Click += (sender, e) => OnBookButtonClicked(e);
+            this.ViewScheduleButton.Click += (sender, e) => OnViewButtonClicked(e);
         }
 
         protected virtual void OnBookButtonClicked(EventArgs e)

@@ -72,7 +72,7 @@ namespace BookingManagement.BookingForm
         }
         private void OnOccupationChanged(object sender, EventArgs e)
         {
-            Guna2RadioButton radioButton = (Guna2RadioButton)sender;
+            RadioButton radioButton = (RadioButton)sender;
             string name = (string)radioButton.Tag;
 
             if (radioButton.Checked)
@@ -115,7 +115,5 @@ namespace BookingManagement.BookingForm
                 }
             }
         }
-
-       
     }
 }

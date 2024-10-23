@@ -31,23 +31,16 @@ namespace BookingManagement.ScheduleForm
         private void InitializeComponent()
         {
             this.facilityPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.facilityCard1 = new BookingManagement.FacilityCard("Test 1",false);
-            this.facilityCard2 = new BookingManagement.FacilityCard("Test 2",false);
-            this.facilityCard3 = new BookingManagement.FacilityCard("Test 3",false);
             this.categoryPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.spacer = new System.Windows.Forms.Panel();
             this.allCategory = new Guna.UI2.WinForms.Guna2Button();
             this.facilityLabel = new System.Windows.Forms.Label();
-            this.facilityPanel.SuspendLayout();
             this.categoryPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // facilityPanel
             // 
             this.facilityPanel.AutoScroll = true;
-            this.facilityPanel.Controls.Add(this.facilityCard1);
-            this.facilityPanel.Controls.Add(this.facilityCard2);
-            this.facilityPanel.Controls.Add(this.facilityCard3);
             this.facilityPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.facilityPanel.Location = new System.Drawing.Point(0, 120);
             this.facilityPanel.Name = "facilityPanel";
@@ -55,33 +48,6 @@ namespace BookingManagement.ScheduleForm
             this.facilityPanel.Size = new System.Drawing.Size(1350, 383);
             this.facilityPanel.TabIndex = 22;
             this.facilityPanel.WrapContents = false;
-            // 
-            // facilityCard1
-            // 
-            this.facilityCard1.BackColor = System.Drawing.Color.Transparent;
-            this.facilityCard1.Location = new System.Drawing.Point(145, 60);
-            this.facilityCard1.Margin = new System.Windows.Forms.Padding(0);
-            this.facilityCard1.Name = "facilityCard1";
-            this.facilityCard1.Size = new System.Drawing.Size(714, 220);
-            this.facilityCard1.TabIndex = 0;
-            // 
-            // facilityCard2
-            // 
-            this.facilityCard2.BackColor = System.Drawing.Color.Transparent;
-            this.facilityCard2.Location = new System.Drawing.Point(859, 60);
-            this.facilityCard2.Margin = new System.Windows.Forms.Padding(0);
-            this.facilityCard2.Name = "facilityCard2";
-            this.facilityCard2.Size = new System.Drawing.Size(714, 220);
-            this.facilityCard2.TabIndex = 1;
-            // 
-            // facilityCard3
-            // 
-            this.facilityCard3.BackColor = System.Drawing.Color.Transparent;
-            this.facilityCard3.Location = new System.Drawing.Point(1573, 60);
-            this.facilityCard3.Margin = new System.Windows.Forms.Padding(0);
-            this.facilityCard3.Name = "facilityCard3";
-            this.facilityCard3.Size = new System.Drawing.Size(714, 220);
-            this.facilityCard3.TabIndex = 2;
             // 
             // categoryPanel
             // 
@@ -147,7 +113,6 @@ namespace BookingManagement.ScheduleForm
             this.Controls.Add(this.facilityLabel);
             this.Name = "ScheduleOne";
             this.Size = new System.Drawing.Size(1350, 503);
-            this.facilityPanel.ResumeLayout(false);
             this.categoryPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -156,9 +121,6 @@ namespace BookingManagement.ScheduleForm
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel facilityPanel;
-        private FacilityCard facilityCard1;
-        private FacilityCard facilityCard2;
-        private FacilityCard facilityCard3;
         private Guna.UI2.WinForms.Guna2Panel categoryPanel;
         private System.Windows.Forms.Panel spacer;
         private Guna.UI2.WinForms.Guna2Button allCategory;

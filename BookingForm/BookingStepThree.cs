@@ -12,9 +12,15 @@ namespace BookingManagement.BookingForm
 {
     public partial class BookingStepThree : UserControl
     {
+        public event EventHandler proceedButtonClick;
         public BookingStepThree()
         {
             InitializeComponent();
+            this.proceedButton.Click += (sender, e) => OnProceedButtonclick(e);
+        }
+        protected virtual void OnProceedButtonclick(EventArgs e)
+        {
+            proceedButtonClick?.Invoke(this, e);
         }
     }
 }

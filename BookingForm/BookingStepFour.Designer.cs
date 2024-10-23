@@ -37,13 +37,14 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.additionLabel = new System.Windows.Forms.Label();
             this.additionalInput = new Guna.UI2.WinForms.Guna2TextBox();
+            this.touchKeyboard = new BookingManagement.TouchKeyboard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.bookLabel = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.touchKeyboard = new BookingManagement.TouchKeyboard();
+            this.proceedButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.progressPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -201,6 +202,16 @@
             this.additionalInput.TextOffset = new System.Drawing.Point(6, -5);
             this.additionalInput.WordWrap = false;
             // 
+            // touchKeyboard
+            // 
+            this.touchKeyboard.BackColor = System.Drawing.Color.Transparent;
+            this.touchKeyboard.Input = null;
+            this.touchKeyboard.Location = new System.Drawing.Point(153, 116);
+            this.touchKeyboard.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.touchKeyboard.Name = "touchKeyboard";
+            this.touchKeyboard.Size = new System.Drawing.Size(626, 291);
+            this.touchKeyboard.TabIndex = 20;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -212,6 +223,7 @@
             this.tableLayoutPanel2.Controls.Add(this.guna2VSeparator1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.bookLabel, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.guna2Separator1, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.proceedButton, 2, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -219,8 +231,8 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 210F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 219F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(551, 447);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
@@ -292,15 +304,27 @@
             this.guna2Separator1.Size = new System.Drawing.Size(489, 10);
             this.guna2Separator1.TabIndex = 4;
             // 
-            // touchKeyboard
+            // proceedButton
             // 
-            this.touchKeyboard.BackColor = System.Drawing.Color.Transparent;
-            this.touchKeyboard.Input = null;
-            this.touchKeyboard.Location = new System.Drawing.Point(153, 116);
-            this.touchKeyboard.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.touchKeyboard.Name = "touchKeyboard";
-            this.touchKeyboard.Size = new System.Drawing.Size(626, 291);
-            this.touchKeyboard.TabIndex = 20;
+            this.proceedButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.proceedButton.BorderRadius = 10;
+            this.proceedButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.proceedButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.proceedButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.proceedButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.proceedButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.proceedButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(158)))), ((int)(((byte)(241)))));
+            this.proceedButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(174)))), ((int)(((byte)(243)))));
+            this.proceedButton.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proceedButton.ForeColor = System.Drawing.Color.White;
+            this.proceedButton.Location = new System.Drawing.Point(376, 400);
+            this.proceedButton.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
+            this.proceedButton.Name = "proceedButton";
+            this.proceedButton.Size = new System.Drawing.Size(155, 38);
+            this.proceedButton.TabIndex = 18;
+            this.proceedButton.Text = "Proceed";
+            this.proceedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.proceedButton.TextOffset = new System.Drawing.Point(5, 0);
             // 
             // BookingStepFour
             // 
@@ -341,5 +365,6 @@
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2GradientButton proceedButton;
     }
 }

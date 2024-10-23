@@ -152,6 +152,7 @@
             this.bookingStepTwo.BackColor = System.Drawing.Color.Transparent;
             this.bookingStepTwo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingStepTwo.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepTwo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bookingStepTwo.Name = "bookingStepTwo";
             this.bookingStepTwo.Size = new System.Drawing.Size(1334, 0);
             this.bookingStepTwo.TabIndex = 16;
@@ -160,6 +161,7 @@
             // 
             this.bookingStepThree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingStepThree.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepThree.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bookingStepThree.Name = "bookingStepThree";
             this.bookingStepThree.Size = new System.Drawing.Size(1334, 0);
             this.bookingStepThree.TabIndex = 17;
@@ -169,6 +171,7 @@
             this.bookingStepFour.BackColor = System.Drawing.Color.Transparent;
             this.bookingStepFour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingStepFour.Location = new System.Drawing.Point(0, 584);
+            this.bookingStepFour.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bookingStepFour.Name = "bookingStepFour";
             this.bookingStepFour.Size = new System.Drawing.Size(1334, 0);
             this.bookingStepFour.TabIndex = 18;
@@ -177,6 +180,7 @@
             // 
             this.bookingFinal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingFinal.Location = new System.Drawing.Point(0, 584);
+            this.bookingFinal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bookingFinal.Name = "bookingFinal";
             this.bookingFinal.Size = new System.Drawing.Size(1334, 0);
             this.bookingFinal.TabIndex = 19;
@@ -186,6 +190,7 @@
             this.scheduleTwo.BackColor = System.Drawing.Color.Transparent;
             this.scheduleTwo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scheduleTwo.Location = new System.Drawing.Point(0, 584);
+            this.scheduleTwo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.scheduleTwo.Name = "scheduleTwo";
             this.scheduleTwo.Size = new System.Drawing.Size(1334, 0);
             this.scheduleTwo.TabIndex = 22;
@@ -195,6 +200,7 @@
             this.homePanel.BackColor = System.Drawing.Color.Transparent;
             this.homePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.homePanel.Location = new System.Drawing.Point(0, 81);
+            this.homePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(1334, 503);
             this.homePanel.TabIndex = 14;
@@ -203,14 +209,14 @@
             // 
             this.scheduleOne.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scheduleOne.Location = new System.Drawing.Point(0, 584);
+            this.scheduleOne.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.scheduleOne.Name = "scheduleOne";
             this.scheduleOne.Size = new System.Drawing.Size(1334, 0);
             this.scheduleOne.TabIndex = 23;
             // 
             // ClientForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1334, 684);
             this.Controls.Add(this.scheduleOne);
@@ -224,7 +230,7 @@
             this.Controls.Add(this.clientFooter);
             this.Controls.Add(this.headerPanel);
             this.Name = "ClientForm";
-            this.Text = "Form1";
+            this.Text = "Booking Management";
             this.headerPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -250,4 +256,3 @@
         private ScheduleForm.ScheduleOne scheduleOne;
     }
 }
-
