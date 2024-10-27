@@ -9,7 +9,7 @@ namespace BookingManagement.ModelViews
 {
     abstract class Database
     {
-        private string connectionString;
+        private readonly string connectionString;
 
         public Database()
         {

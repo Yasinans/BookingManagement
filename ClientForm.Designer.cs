@@ -35,15 +35,15 @@
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.returnButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dateTimer = new System.Windows.Forms.Timer(this.components);
-            this.clientFooter = new BookingManagement.ClientFooter();
-            this.bookingStepOne = new BookingManagement.BookingForm.BookingStepOne();
-            this.bookingStepTwo = new BookingManagement.BookingForm.BookingStepTwo();
-            this.bookingStepThree = new BookingManagement.BookingForm.BookingStepThree();
-            this.bookingStepFour = new BookingManagement.BookingForm.BookingStepFour();
-            this.bookingFinal = new BookingManagement.BookingForm.BookingFinal();
-            this.scheduleTwo = new BookingManagement.ScheduleForm.ScheduleTwo();
-            this.homePanel = new BookingManagement.HomePanel();
-            this.scheduleOne = new BookingManagement.ScheduleForm.ScheduleOne();
+            this.clientFooter = new ClientFooter();
+            this.bookingStepOne = new BookingForm.BookingStepOne();
+            this.bookingStepTwo = new BookingForm.BookingStepTwo();
+            this.bookingStepThree = new BookingForm.BookingStepThree();
+            this.bookingStepFour = new  BookingForm.BookingStepFour();
+            this.bookingFinal = new     BookingForm.BookingFinal();
+            this.scheduleTwo = new ScheduleForm.ScheduleTwo();
+            this.homePanel = new HomePanel();
+            this.scheduleOne = new ScheduleForm.ScheduleOne();
             this.headerPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -123,7 +123,7 @@
             this.returnButton.Name = "returnButton";
             this.returnButton.Size = new System.Drawing.Size(54, 54);
             this.returnButton.TabIndex = 7;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
+            this.returnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
             // dateTimer
             // 
@@ -153,7 +153,7 @@
             this.bookingStepTwo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bookingStepTwo.Location = new System.Drawing.Point(0, 584);
             this.bookingStepTwo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bookingStepTwo.Name = "bookingStepTwo";
+            this.bookingStepTwo.FullName = "bookingStepTwo";
             this.bookingStepTwo.Size = new System.Drawing.Size(1334, 0);
             this.bookingStepTwo.TabIndex = 16;
             // 

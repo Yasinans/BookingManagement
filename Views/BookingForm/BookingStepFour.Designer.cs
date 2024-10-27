@@ -37,7 +37,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.additionLabel = new System.Windows.Forms.Label();
             this.additionalInput = new Guna.UI2.WinForms.Guna2TextBox();
-            this.touchKeyboard = new BookingManagement.TouchKeyboard();
+            this.touchKeyboard = new TouchKeyboard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();

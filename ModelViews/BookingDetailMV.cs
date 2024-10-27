@@ -15,6 +15,7 @@ namespace BookingManagement.ModelViews
 
         public BookingDetailMV()
         {
+            //major flaw: no active/approved/status
             LoadBookingDetails();
         }
 

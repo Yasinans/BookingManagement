@@ -20,7 +20,7 @@ namespace BookingManagement.ViewModel
 
             using (SqlConnection connection = new SqlConnection(ConnectionString()))
             {
-                string query = "SELECT id, facility, category, image_url FROM Facilities";
+                string query = "SELECT id, facility_name, category, image_url FROM Facilities";
                 using (var command = new SqlCommand(query, connection))
                 {
                     connection.Open();

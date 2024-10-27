@@ -17,13 +17,14 @@ namespace BookingManagement
             this.CardButton.Click += (sender, e) => OnButtonClick(e);
         }
         //to be edited for db integration
-        public FacilityCard(string facilityName, bool isBooking)
+        public FacilityCard(string facilityName, string description, bool isBooking)
         {
             //tag is for facility id based on db
             this.Tag = 0;
             this.isBooking = isBooking;
             InitializeComponent();
             BookLabel.Text = facilityName;
+            BookDescription.Text = description;
             CardButton.Text = isBooking ? "Book Now " : "View Schedule";
             this.CardButton.Click += (sender, e) => OnButtonClick(e);
         }

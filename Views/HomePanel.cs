@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Windows.Forms;
-using BookingManagement.Util;
 
 namespace BookingManagement
 {
     public partial class HomePanel : UserControl
     {
 
-        public event EventHandler bookButtonClicked;
-        public event EventHandler viewButtonClicked;
+        public event EventHandler BookButtonClicked;
+        public event EventHandler ViewButtonClicked;
         public HomePanel()
         {
             InitializeComponent();
@@ -19,12 +18,12 @@ namespace BookingManagement
 
         protected virtual void OnBookButtonClicked(EventArgs e)
         {
-            bookButtonClicked?.Invoke(this, e);
+            BookButtonClicked?.Invoke(this, e);
         }
 
         protected virtual void OnViewButtonClicked(EventArgs e)
         {
-            viewButtonClicked?.Invoke(this, e);
+            ViewButtonClicked?.Invoke(this, e);
         }
 
 

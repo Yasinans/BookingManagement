@@ -51,12 +51,12 @@
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.bookingCard1 = new BookingManagement.ScheduleForm.BookingCard();
-            this.bookingCard2 = new BookingManagement.ScheduleForm.BookingCard();
-            this.bookingCard3 = new BookingManagement.ScheduleForm.BookingCard();
-            this.bookingCard4 = new BookingManagement.ScheduleForm.BookingCard();
-            this.bookingCard5 = new BookingManagement.ScheduleForm.BookingCard();
-            this.bookingCard6 = new BookingManagement.ScheduleForm.BookingCard();
+            this.bookingCard1 = new ScheduleForm.BookingCard();
+            this.bookingCard2 = new ScheduleForm.BookingCard();
+            this.bookingCard3 = new ScheduleForm.BookingCard();
+            this.bookingCard4 = new ScheduleForm.BookingCard();
+            this.bookingCard5 = new ScheduleForm.BookingCard();
+            this.bookingCard6 = new ScheduleForm.BookingCard();
             this.progressPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
