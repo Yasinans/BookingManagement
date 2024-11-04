@@ -20,7 +20,7 @@ namespace BookingManagement.ViewModel
 
             using (SqlConnection connection = new SqlConnection(ConnectionString()))
             {
-                string query = "SELECT id, facility_name, category, image_url FROM Facilities";
+                string query = "SELECT id, facility_name, category, image FROM Facilities";
                 using (var command = new SqlCommand(query, connection))
                 {
                     connection.Open();
@@ -32,7 +32,7 @@ namespace BookingManagement.ViewModel
                             Id = reader.GetInt32(0),
                             FacilityName = reader.GetString(1),
                             Category = reader.GetString(2),
-                            ImageUrl = reader.GetString(3),
+                            Image = reader.GetString(3),
                         };
                         Facilities.Add(facility);
                     }

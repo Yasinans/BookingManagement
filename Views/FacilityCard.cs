@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using BookingManagement.Util;
 
@@ -6,31 +7,30 @@ namespace BookingManagement
 {
     public partial class FacilityCard : UserControl
     {
-        public event EventHandler buttonClick;
-        public bool isBooking;
-        public FacilityCard()
-        {
-            //id
-            this.Tag = 0;
-            isBooking = true;
-            InitializeComponent();
-            this.CardButton.Click += (sender, e) => OnButtonClick(e);
-        }
+        private bool isBooking;
         //to be edited for db integration
-        public FacilityCard(string facilityName, string description, bool isBooking)
+        public FacilityCard(string facilityName, string description, Image image, bool isBooking)
         {
-            //tag is for facility id based on db
-            this.Tag = 0;
             this.isBooking = isBooking;
             InitializeComponent();
             BookLabel.Text = facilityName;
             BookDescription.Text = description;
             CardButton.Text = isBooking ? "Book Now " : "View Schedule";
-            this.CardButton.Click += (sender, e) => OnButtonClick(e);
+            BookFacilityImage.Image = ImageUtil.RoundCorner(image,30);
+            BookFacilityImage.HoverState.Image = ImageUtil.HoverImage(image);
+            this.CardButton.Click += OnButtonClick;
+
         }
-        protected virtual void OnButtonClick(EventArgs e)
+        public string GetFacilityName()
         {
-            buttonClick?.Invoke(this, e);
+            return BookLabel.Text;
+        }
+        private void OnButtonClick(Object obj, EventArgs e)
+        {
+            BookingManagement.Form.CurrentFacility = (int)this.Tag;
+            if (isBooking) BookingManagement.Form.ShowPage(2);
+            else BookingManagement.Form.ShowPage(7);
+    
         }
     }
 }

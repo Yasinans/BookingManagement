@@ -12,9 +12,16 @@ namespace BookingManagement.ScheduleForm
 {
     public partial class BookingCard : UserControl
     {
+        public event EventHandler ButtonClick;
         public BookingCard()
         {
             InitializeComponent();
+            Button.Click += (sender, e) => ProcessButtonClick(e);
+        }
+
+        protected virtual void ProcessButtonClick(EventArgs e)
+        {
+            ButtonClick?.Invoke(this, e);
         }
     }
 }

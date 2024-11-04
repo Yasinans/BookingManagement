@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.progressPanel = new System.Windows.Forms.TableLayoutPanel();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ConfirmationLabel = new System.Windows.Forms.Label();
+            this.Countdown = new System.Windows.Forms.Timer(this.components);
             this.progressPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -88,20 +90,6 @@
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(185, 17);
             this.guna2ShadowPanel3.TabIndex = 2;
             // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(118)))), ((int)(((byte)(236)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(920, 19);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 2;
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
-            this.guna2ShadowPanel1.ShadowDepth = 20;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(185, 17);
-            this.guna2ShadowPanel1.TabIndex = 0;
-            // 
             // guna2ShadowPanel4
             // 
             this.guna2ShadowPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -115,6 +103,20 @@
             this.guna2ShadowPanel4.ShadowDepth = 0;
             this.guna2ShadowPanel4.Size = new System.Drawing.Size(185, 17);
             this.guna2ShadowPanel4.TabIndex = 3;
+            // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(118)))), ((int)(((byte)(236)))));
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(920, 19);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.Radius = 2;
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
+            this.guna2ShadowPanel1.ShadowDepth = 20;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -146,6 +148,11 @@
             this.ConfirmationLabel.Text = "Booking Details has been \r\nsuccessfully submitted!";
             this.ConfirmationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Countdown
+            // 
+            this.Countdown.Interval = 5000;
+            this.Countdown.Tick += new System.EventHandler(this.Countdown_Tick);
+            // 
             // BookingFinal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,5 +177,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label ConfirmationLabel;
+        private System.Windows.Forms.Timer Countdown;
     }
 }

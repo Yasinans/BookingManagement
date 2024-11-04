@@ -40,7 +40,7 @@
             this.bookingStepTwo = new BookingForm.BookingStepTwo();
             this.bookingStepThree = new BookingForm.BookingStepThree();
             this.bookingStepFour = new  BookingForm.BookingStepFour();
-            this.bookingFinal = new     BookingForm.BookingFinal();
+            this.bookingFinal = new BookingForm.BookingFinal();
             this.scheduleTwo = new ScheduleForm.ScheduleTwo();
             this.homePanel = new HomePanel();
             this.scheduleOne = new ScheduleForm.ScheduleOne();

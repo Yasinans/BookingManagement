@@ -13,5 +13,7 @@ namespace BookingManagement
         public static FacilityMV FacilityMV { get; set; } = new FacilityMV();
         public static BookingDetailMV BookingDetailMV { get; set; } = new BookingDetailMV();
         public static OptionMV OptionMV { get; set; } = new OptionMV();
+
+        public static ClientForm Form { get; set; } 
     }
 }

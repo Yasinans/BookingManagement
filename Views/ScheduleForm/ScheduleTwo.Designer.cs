@@ -28,35 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScheduleTwo));
             this.progressPanel = new System.Windows.Forms.TableLayoutPanel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.bookingLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.totalLabel = new System.Windows.Forms.Label();
-            this.bookFacilityButton = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.bookLabel = new System.Windows.Forms.Label();
+            this.DescriptionLabel = new System.Windows.Forms.Label();
+            this.FacilityImage = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.FacilityLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.startLabel = new System.Windows.Forms.Label();
-            this.startDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.StartDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.EndDateTimePicker = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.BookingPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.bookingCard1 = new ScheduleForm.BookingCard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.DetailsLabel = new System.Windows.Forms.Label();
+            this.RequesterLabel = new System.Windows.Forms.Label();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.bookingCard1 = new ScheduleForm.BookingCard();
-            this.bookingCard2 = new ScheduleForm.BookingCard();
-            this.bookingCard3 = new ScheduleForm.BookingCard();
-            this.bookingCard4 = new ScheduleForm.BookingCard();
-            this.bookingCard5 = new ScheduleForm.BookingCard();
-            this.bookingCard6 = new ScheduleForm.BookingCard();
             this.progressPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -65,7 +59,7 @@
             this.flowLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.BookingPanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,7 +119,7 @@
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel3);
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
+            this.flowLayoutPanel1.Controls.Add(this.BookingPanel);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -144,9 +138,9 @@
             this.bookingLabel.Location = new System.Drawing.Point(150, 0);
             this.bookingLabel.Margin = new System.Windows.Forms.Padding(0);
             this.bookingLabel.Name = "bookingLabel";
-            this.bookingLabel.Size = new System.Drawing.Size(167, 55);
+            this.bookingLabel.Size = new System.Drawing.Size(309, 55);
             this.bookingLabel.TabIndex = 18;
-            this.bookingLabel.Text = "Bookings";
+            this.bookingLabel.Text = "View Schedules";
             this.bookingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel1
@@ -154,71 +148,71 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.24928F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.75072F));
-            this.tableLayoutPanel1.Controls.Add(this.totalLabel, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.bookFacilityButton, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.bookLabel, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.DescriptionLabel, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.FacilityImage, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.FacilityLabel, 1, 0);
             this.flowLayoutPanel1.SetFlowBreak(this.tableLayoutPanel1, true);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(153, 58);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.25926F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.74074F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.60396F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.39604F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(830, 116);
             this.tableLayoutPanel1.TabIndex = 19;
             // 
-            // totalLabel
+            // DescriptionLabel
             // 
-            this.totalLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.totalLabel.AutoSize = true;
-            this.totalLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.totalLabel.Location = new System.Drawing.Point(174, 60);
-            this.totalLabel.Margin = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.totalLabel.Name = "totalLabel";
-            this.totalLabel.Size = new System.Drawing.Size(232, 23);
-            this.totalLabel.TabIndex = 26;
-            this.totalLabel.Text = "Total Active/Upcoming Bookings: ";
-            this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DescriptionLabel.AutoSize = true;
+            this.DescriptionLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.DescriptionLabel.Location = new System.Drawing.Point(174, 45);
+            this.DescriptionLabel.Margin = new System.Windows.Forms.Padding(15, 5, 0, 0);
+            this.DescriptionLabel.Name = "DescriptionLabel";
+            this.DescriptionLabel.Size = new System.Drawing.Size(103, 23);
+            this.DescriptionLabel.TabIndex = 7;
+            this.DescriptionLabel.Text = "Category: ALL";
+            this.DescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // bookFacilityButton
+            // FacilityImage
             // 
-            this.bookFacilityButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bookFacilityButton.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.bookFacilityButton.HoverState.ImageSize = new System.Drawing.Size(342, 210);
-            this.bookFacilityButton.Image = global::BookingManagement.Properties.Resources.PlaceholderFacility;
-            this.bookFacilityButton.ImageOffset = new System.Drawing.Point(0, 0);
-            this.bookFacilityButton.ImageRotate = 0F;
-            this.bookFacilityButton.ImageSize = new System.Drawing.Size(342, 210);
-            this.bookFacilityButton.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.bookFacilityButton.Location = new System.Drawing.Point(3, 3);
-            this.bookFacilityButton.Name = "bookFacilityButton";
-            this.bookFacilityButton.PressedState.ImageSize = new System.Drawing.Size(342, 210);
-            this.tableLayoutPanel1.SetRowSpan(this.bookFacilityButton, 3);
-            this.bookFacilityButton.Size = new System.Drawing.Size(153, 110);
-            this.bookFacilityButton.TabIndex = 5;
+            this.FacilityImage.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.FacilityImage.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.FacilityImage.HoverState.ImageSize = new System.Drawing.Size(342, 210);
+            this.FacilityImage.Image = global::BookingManagement.Properties.Resources.PlaceholderFacility;
+            this.FacilityImage.ImageOffset = new System.Drawing.Point(0, 0);
+            this.FacilityImage.ImageRotate = 0F;
+            this.FacilityImage.ImageSize = new System.Drawing.Size(342, 210);
+            this.FacilityImage.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.FacilityImage.Location = new System.Drawing.Point(3, 3);
+            this.FacilityImage.Name = "FacilityImage";
+            this.FacilityImage.PressedState.ImageSize = new System.Drawing.Size(342, 210);
+            this.tableLayoutPanel1.SetRowSpan(this.FacilityImage, 3);
+            this.FacilityImage.Size = new System.Drawing.Size(153, 110);
+            this.FacilityImage.TabIndex = 5;
             // 
-            // bookLabel
+            // FacilityLabel
             // 
-            this.bookLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bookLabel.AutoSize = true;
-            this.bookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.bookLabel.Location = new System.Drawing.Point(159, 10);
-            this.bookLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.bookLabel.Name = "bookLabel";
-            this.bookLabel.Size = new System.Drawing.Size(106, 32);
-            this.bookLabel.TabIndex = 6;
-            this.bookLabel.Text = "Facility #1";
-            this.bookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FacilityLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.FacilityLabel.AutoSize = true;
+            this.FacilityLabel.Font = new System.Drawing.Font("Plus Jakarta Sans SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FacilityLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.FacilityLabel.Location = new System.Drawing.Point(169, 7);
+            this.FacilityLabel.Margin = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.FacilityLabel.Name = "FacilityLabel";
+            this.FacilityLabel.Size = new System.Drawing.Size(113, 33);
+            this.FacilityLabel.TabIndex = 6;
+            this.FacilityLabel.Text = "Facility #1";
+            this.FacilityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.AutoSize = true;
             this.flowLayoutPanel3.Controls.Add(this.startLabel);
-            this.flowLayoutPanel3.Controls.Add(this.startDateTimePicker);
+            this.flowLayoutPanel3.Controls.Add(this.StartDateTimePicker);
             this.flowLayoutPanel3.Controls.Add(this.label3);
-            this.flowLayoutPanel3.Controls.Add(this.guna2DateTimePicker1);
+            this.flowLayoutPanel3.Controls.Add(this.EndDateTimePicker);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(153, 180);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
@@ -239,31 +233,33 @@
             this.startLabel.Text = "From:";
             this.startLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // startDateTimePicker
+            // StartDateTimePicker
             // 
-            this.startDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.startDateTimePicker.Animated = true;
-            this.startDateTimePicker.AutoRoundedCorners = true;
-            this.startDateTimePicker.BackColor = System.Drawing.Color.Transparent;
-            this.startDateTimePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.startDateTimePicker.BorderRadius = 17;
-            this.startDateTimePicker.BorderThickness = 1;
-            this.startDateTimePicker.Checked = true;
-            this.startDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.startDateTimePicker.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
-            this.startDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.startDateTimePicker.IndicateFocus = true;
-            this.startDateTimePicker.Location = new System.Drawing.Point(69, 7);
-            this.startDateTimePicker.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.startDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.startDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.startDateTimePicker.Name = "startDateTimePicker";
-            this.startDateTimePicker.ShadowDecoration.BorderRadius = 17;
-            this.startDateTimePicker.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.startDateTimePicker.ShadowDecoration.Enabled = true;
-            this.startDateTimePicker.Size = new System.Drawing.Size(237, 36);
-            this.startDateTimePicker.TabIndex = 23;
-            this.startDateTimePicker.Value = new System.DateTime(2024, 10, 19, 22, 51, 14, 825);
+            this.StartDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.StartDateTimePicker.Animated = true;
+            this.StartDateTimePicker.AutoRoundedCorners = true;
+            this.StartDateTimePicker.BackColor = System.Drawing.Color.Transparent;
+            this.StartDateTimePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.StartDateTimePicker.BorderRadius = 17;
+            this.StartDateTimePicker.BorderThickness = 1;
+            this.StartDateTimePicker.Checked = true;
+            this.StartDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.StartDateTimePicker.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
+            this.StartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.StartDateTimePicker.IndicateFocus = true;
+            this.StartDateTimePicker.Location = new System.Drawing.Point(69, 7);
+            this.StartDateTimePicker.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.StartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.StartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.StartDateTimePicker.Name = "StartDateTimePicker";
+            this.StartDateTimePicker.ShadowDecoration.BorderRadius = 17;
+            this.StartDateTimePicker.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.StartDateTimePicker.ShadowDecoration.Enabled = true;
+            this.StartDateTimePicker.Size = new System.Drawing.Size(237, 36);
+            this.StartDateTimePicker.TabIndex = 23;
+            this.StartDateTimePicker.Value = new System.DateTime(2024, 10, 19, 22, 51, 14, 825);
+            this.StartDateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
+            this.StartDateTimePicker.Click += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // label3
             // 
@@ -279,31 +275,32 @@
             this.label3.Text = "To:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2DateTimePicker1
+            // EndDateTimePicker
             // 
-            this.guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.AutoRoundedCorners = true;
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.guna2DateTimePicker1.BorderRadius = 17;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.IndicateFocus = true;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(355, 7);
-            this.guna2DateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.BorderRadius = 17;
-            this.guna2DateTimePicker1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.guna2DateTimePicker1.ShadowDecoration.Enabled = true;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(230, 36);
-            this.guna2DateTimePicker1.TabIndex = 27;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 10, 19, 22, 51, 14, 825);
+            this.EndDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.EndDateTimePicker.Animated = true;
+            this.EndDateTimePicker.AutoRoundedCorners = true;
+            this.EndDateTimePicker.BackColor = System.Drawing.Color.Transparent;
+            this.EndDateTimePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.EndDateTimePicker.BorderRadius = 17;
+            this.EndDateTimePicker.BorderThickness = 1;
+            this.EndDateTimePicker.Checked = true;
+            this.EndDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.EndDateTimePicker.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
+            this.EndDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.EndDateTimePicker.IndicateFocus = true;
+            this.EndDateTimePicker.Location = new System.Drawing.Point(355, 7);
+            this.EndDateTimePicker.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.EndDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.EndDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.EndDateTimePicker.Name = "EndDateTimePicker";
+            this.EndDateTimePicker.ShadowDecoration.BorderRadius = 17;
+            this.EndDateTimePicker.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.EndDateTimePicker.ShadowDecoration.Enabled = true;
+            this.EndDateTimePicker.Size = new System.Drawing.Size(230, 36);
+            this.EndDateTimePicker.TabIndex = 27;
+            this.EndDateTimePicker.Value = new System.DateTime(2024, 10, 19, 22, 51, 14, 825);
+            this.EndDateTimePicker.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // label1
             // 
@@ -320,19 +317,23 @@
             this.label1.Text = "List of Bookings:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // flowLayoutPanel2
+            // BookingPanel
             // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.bookingCard1);
-            this.flowLayoutPanel2.Controls.Add(this.bookingCard2);
-            this.flowLayoutPanel2.Controls.Add(this.bookingCard3);
-            this.flowLayoutPanel2.Controls.Add(this.bookingCard4);
-            this.flowLayoutPanel2.Controls.Add(this.bookingCard5);
-            this.flowLayoutPanel2.Controls.Add(this.bookingCard6);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(153, 272);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(674, 155);
-            this.flowLayoutPanel2.TabIndex = 27;
+            this.BookingPanel.AutoScroll = true;
+            this.BookingPanel.Controls.Add(this.bookingCard1);
+            this.BookingPanel.Location = new System.Drawing.Point(153, 272);
+            this.BookingPanel.Name = "BookingPanel";
+            this.BookingPanel.Size = new System.Drawing.Size(674, 155);
+            this.BookingPanel.TabIndex = 27;
+            // 
+            // bookingCard1
+            // 
+            this.bookingCard1.BackColor = System.Drawing.Color.Transparent;
+            this.bookingCard1.Location = new System.Drawing.Point(10, 10);
+            this.bookingCard1.Margin = new System.Windows.Forms.Padding(10);
+            this.bookingCard1.Name = "bookingCard1";
+            this.bookingCard1.Size = new System.Drawing.Size(302, 54);
+            this.bookingCard1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
@@ -340,8 +341,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.260575F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.07259F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.75681F));
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.DetailsLabel, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.RequesterLabel, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.guna2VSeparator1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.guna2Separator1, 1, 2);
@@ -357,35 +358,32 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(499, 447);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // label2
+            // DetailsLabel
             // 
-            this.label2.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label2, 2);
-            this.label2.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label2.Location = new System.Drawing.Point(76, 172);
-            this.label2.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.label2.Name = "label2";
-            this.tableLayoutPanel2.SetRowSpan(this.label2, 2);
-            this.label2.Size = new System.Drawing.Size(178, 216);
-            this.label2.TabIndex = 6;
-            this.label2.Text = resources.GetString("label2.Text");
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DetailsLabel.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.DetailsLabel, 2);
+            this.DetailsLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DetailsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.DetailsLabel.Location = new System.Drawing.Point(76, 172);
+            this.DetailsLabel.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.DetailsLabel.Name = "DetailsLabel";
+            this.tableLayoutPanel2.SetRowSpan(this.DetailsLabel, 2);
+            this.DetailsLabel.Size = new System.Drawing.Size(0, 24);
+            this.DetailsLabel.TabIndex = 6;
+            this.DetailsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // RequesterLabel
             // 
-            this.label4.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.label4, 2);
-            this.label4.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label4.Location = new System.Drawing.Point(76, 71);
-            this.label4.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(308, 72);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Requester’s Name: Test T. Test\r\nDepartment: College of Arts and Science\r\nOccupati" +
-    "on: Student";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RequesterLabel.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.RequesterLabel, 2);
+            this.RequesterLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RequesterLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.RequesterLabel.Location = new System.Drawing.Point(76, 71);
+            this.RequesterLabel.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.RequesterLabel.Name = "RequesterLabel";
+            this.RequesterLabel.Size = new System.Drawing.Size(0, 24);
+            this.RequesterLabel.TabIndex = 5;
+            this.RequesterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2VSeparator1
             // 
@@ -424,65 +422,11 @@
             this.guna2Separator1.Size = new System.Drawing.Size(462, 10);
             this.guna2Separator1.TabIndex = 4;
             // 
-            // bookingCard1
-            // 
-            this.bookingCard1.BackColor = System.Drawing.Color.Transparent;
-            this.bookingCard1.Location = new System.Drawing.Point(10, 10);
-            this.bookingCard1.Margin = new System.Windows.Forms.Padding(10);
-            this.bookingCard1.Name = "bookingCard1";
-            this.bookingCard1.Size = new System.Drawing.Size(302, 54);
-            this.bookingCard1.TabIndex = 0;
-            // 
-            // bookingCard2
-            // 
-            this.bookingCard2.BackColor = System.Drawing.Color.Transparent;
-            this.bookingCard2.Location = new System.Drawing.Point(332, 10);
-            this.bookingCard2.Margin = new System.Windows.Forms.Padding(10);
-            this.bookingCard2.Name = "bookingCard2";
-            this.bookingCard2.Size = new System.Drawing.Size(302, 54);
-            this.bookingCard2.TabIndex = 1;
-            // 
-            // bookingCard3
-            // 
-            this.bookingCard3.BackColor = System.Drawing.Color.Transparent;
-            this.bookingCard3.Location = new System.Drawing.Point(10, 84);
-            this.bookingCard3.Margin = new System.Windows.Forms.Padding(10);
-            this.bookingCard3.Name = "bookingCard3";
-            this.bookingCard3.Size = new System.Drawing.Size(302, 54);
-            this.bookingCard3.TabIndex = 2;
-            // 
-            // bookingCard4
-            // 
-            this.bookingCard4.BackColor = System.Drawing.Color.Transparent;
-            this.bookingCard4.Location = new System.Drawing.Point(332, 84);
-            this.bookingCard4.Margin = new System.Windows.Forms.Padding(10);
-            this.bookingCard4.Name = "bookingCard4";
-            this.bookingCard4.Size = new System.Drawing.Size(302, 54);
-            this.bookingCard4.TabIndex = 3;
-            // 
-            // bookingCard5
-            // 
-            this.bookingCard5.BackColor = System.Drawing.Color.Transparent;
-            this.bookingCard5.Location = new System.Drawing.Point(10, 158);
-            this.bookingCard5.Margin = new System.Windows.Forms.Padding(10);
-            this.bookingCard5.Name = "bookingCard5";
-            this.bookingCard5.Size = new System.Drawing.Size(302, 54);
-            this.bookingCard5.TabIndex = 4;
-            // 
-            // bookingCard6
-            // 
-            this.bookingCard6.BackColor = System.Drawing.Color.Transparent;
-            this.bookingCard6.Location = new System.Drawing.Point(332, 158);
-            this.bookingCard6.Margin = new System.Windows.Forms.Padding(10);
-            this.bookingCard6.Name = "bookingCard6";
-            this.bookingCard6.Size = new System.Drawing.Size(302, 54);
-            this.bookingCard6.TabIndex = 5;
-            // 
             // ScheduleTwo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.progressPanel);
             this.Name = "ScheduleTwo";
@@ -498,7 +442,7 @@
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.BookingPanel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -513,27 +457,22 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label bookingLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2ImageButton bookFacilityButton;
-        private System.Windows.Forms.Label bookLabel;
         private System.Windows.Forms.Label startLabel;
-        private Guna.UI2.WinForms.Guna2DateTimePicker startDateTimePicker;
+        private Guna.UI2.WinForms.Guna2DateTimePicker StartDateTimePicker;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label DetailsLabel;
+        private System.Windows.Forms.Label RequesterLabel;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.Label totalLabel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker EndDateTimePicker;
+        private System.Windows.Forms.FlowLayoutPanel BookingPanel;
         private BookingCard bookingCard1;
-        private BookingCard bookingCard2;
-        private BookingCard bookingCard3;
-        private BookingCard bookingCard4;
-        private BookingCard bookingCard5;
-        private BookingCard bookingCard6;
+        public Guna.UI2.WinForms.Guna2ImageButton FacilityImage;
+        public System.Windows.Forms.Label DescriptionLabel;
+        public System.Windows.Forms.Label FacilityLabel;
     }
 }

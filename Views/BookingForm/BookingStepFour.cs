@@ -12,21 +12,22 @@ namespace BookingManagement.BookingForm
 {
     public partial class BookingStepFour : UserControl
     {
-        public event EventHandler proceedButtonClick;
+        public string AdditionalDetails;
         public BookingStepFour()
         {
             InitializeComponent();
             this.touchKeyboard.InputUpdated += this.OnInputUpdated;
-            this.proceedButton.Click += (sender, e) => OnProceedButtonclick(e);
+            this.proceedButton.Click += OnProceedButtonClick;
         }
         public void OnInputUpdated(String newValue)
         {
-            additionalInput.Text = newValue;
+            AdditionalDetails = newValue;
+            AdditionalInput.Text = AdditionalDetails;
         }
 
-        protected virtual void OnProceedButtonclick(EventArgs e)
+        private void OnProceedButtonClick(Object obj, EventArgs e)
         {
-            proceedButtonClick?.Invoke(this, e);
+            BookingManagement.Form.ShowPage(5);
         }
     }
 }

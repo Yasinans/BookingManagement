@@ -6,24 +6,22 @@ namespace BookingManagement
     public partial class HomePanel : UserControl
     {
 
-        public event EventHandler BookButtonClicked;
-        public event EventHandler ViewButtonClicked;
         public HomePanel()
         {
             InitializeComponent();
 
-            this.BookFacilityButton.Click += (sender, e) => OnBookButtonClicked(e);
-            this.ViewScheduleButton.Click += (sender, e) => OnViewButtonClicked(e);
+            this.BookFacilityButton.Click +=  OnBookButtonClicked;
+            this.ViewScheduleButton.Click += OnViewButtonClicked;
         }
 
-        protected virtual void OnBookButtonClicked(EventArgs e)
+        private void OnBookButtonClicked(Object obj, EventArgs e)
         {
-            BookButtonClicked?.Invoke(this, e);
+            BookingManagement.Form.ShowPage(1);
         }
 
-        protected virtual void OnViewButtonClicked(EventArgs e)
+        private void  OnViewButtonClicked(Object obj, EventArgs e)
         {
-            ViewButtonClicked?.Invoke(this, e);
+            BookingManagement.Form.ShowPage(6);
         }
 
 

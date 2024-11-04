@@ -1,20 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BookingManagement.BookingForm
 {
     public partial class BookingFinal : UserControl
     {
+
         public BookingFinal()
         {
             InitializeComponent();
+        }
+        
+        public void BeginCountdown()
+        {
+            Countdown.Start();
+        }
+        private void Countdown_Tick(object sender, EventArgs e)
+        {
+            if (BookingManagement.Form.CurrentPage == 5)
+            {
+                BookingManagement.Form.ResetForm();
+                Countdown.Stop();
+            }
         }
     }
 }

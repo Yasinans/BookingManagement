@@ -21,7 +21,7 @@ namespace BookingManagement.ModelViews
 
             using (SqlConnection connection = new SqlConnection(ConnectionString()))
             {
-                string query = "SELECT id, value FROM Options WHERE type='Purposes'";
+                string query = "SELECT id, value FROM Options WHERE type='Purpose'";
                 using (var command = new SqlCommand(query, connection))
                 {
                     connection.Open();

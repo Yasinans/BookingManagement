@@ -5,62 +5,66 @@ using System.Linq;
 using System.Windows.Forms;
 using BookingManagement.Models;
 using BookingManagement.Views.BookingForm;
+using Guna.UI2.WinForms.Suite;
 
 namespace BookingManagement.BookingForm
 {
     public partial class BookingStepTwo : UserControl
-    {
-
-        public event EventHandler ProceedButtonClick;
-       
+    {       
         public string Occupation { get; set; }
         public string Department { get; set; }
         public string FullName { get; set; }
 
-        Dictionary<int, DepartmentButton> DepartmentButtons;
+        public List<DepartmentButton> DepartmentButtons;
 
         public BookingStepTwo()
         {
             InitializeComponent();
-            DepartmentButtons = new Dictionary<int, DepartmentButton>();
+            DepartmentButtons = new List<DepartmentButton>();
             LoadDepartments();
+            Occupation = "Student";
+            Department = DepartmentButtons.First().DepartmentName();
+            proceedButton.Enabled = false;
             this.touchKeyboard.InputUpdated += this.OnInputUpdated;
             this.facultyPanel.FillColor = Color.Transparent;
             this.facultyPanel.FillColor2 = Color.Transparent;
             this.staffPanel.FillColor = Color.Transparent;
             this.staffPanel.FillColor2 = Color.Transparent;
-            this.proceedButton.Click += (sender, e) => OnProceedButtonclick(e);
+            this.proceedButton.Click += OnProceedButtonClick;
         }
 
-        private void LoadDepartments()
+        public void LoadDepartments()
         {
-            foreach(OptionModel department in BookingManagement.OptionMV.Departments.FindAll(x=>x.Type=="Department"))
+            foreach(OptionModel department in BookingManagement.OptionMV.Departments)
             {
                 DepartmentButton departmentButton = new DepartmentButton(department.Value);
                 departmentButton.ButtonClick += HandleDepartmentClick;
                 this.DepartmentLayoutPanel.Controls.Add(departmentButton);
-                DepartmentButtons.Add(department.Id,departmentButton);
+                DepartmentButtons.Add(departmentButton);
             }
-            DepartmentButtons.First().Value.Checked = true;
+            DepartmentButtons.First().Checked = true;
         }
 
         private void HandleDepartmentClick(object obj, EventArgs e)
         {
             DepartmentButton button = (DepartmentButton)obj;
-            foreach (DepartmentButton b in DepartmentButtons.Values)
+            foreach (DepartmentButton b in DepartmentButtons)
             {
                 b.Checked = false;
             }
             button.Checked = true;
             Department = button.DepartmentName();
         }
-        protected virtual void OnProceedButtonclick(EventArgs e)
+        private void OnProceedButtonClick(Object obj, EventArgs e)
         {
-            ProceedButtonClick?.Invoke(this, e);
+            BookingManagement.Form.ShowPage(3);
         }
         public void OnInputUpdated(String newValue)
         {
-            nameInput.Text = newValue;
+            if (newValue.Equals("")) proceedButton.Enabled = false ;
+            else proceedButton.Enabled = true ;
+            FullName = newValue;
+            NameInput.Text = FullName;
         }
 
         private void OnOccupationChanged(object sender, EventArgs e)

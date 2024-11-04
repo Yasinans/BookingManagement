@@ -2,10 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace BookingManagement.ModelViews
 {
@@ -23,8 +19,8 @@ namespace BookingManagement.ModelViews
         {
             using(SqlConnection connection = new SqlConnection(ConnectionString()))
             {
-                string query = "INSERT INTO BookingDetails(name,venue_id,department,occupation,purpose,start_date,end_date,recurrence,additonal_details) " +
-                    "VALUES(@name,@venue_id,@department,@occupation,@purpose,@start_date,@end_date,@recurrence,@additonal_details)";
+                string query = "INSERT INTO BookingDetails(name,venue_id,department,occupation,purpose,start_date,end_date,recurrence,additional_details,status) " +
+                    "VALUES(@name,@venue_id,@department,@occupation,@purpose,@start_date,@end_date,@recurrence,@additional_details,@status)";
                 using (var command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@name",bookingDetail.Name);
@@ -32,10 +28,11 @@ namespace BookingManagement.ModelViews
                     command.Parameters.AddWithValue("@department", bookingDetail.Department);
                     command.Parameters.AddWithValue("@occupation", bookingDetail.Occupation);
                     command.Parameters.AddWithValue("@purpose", bookingDetail.Purpose);
-                    command.Parameters.AddWithValue("@start_detail", bookingDetail.StartDate);
-                    command.Parameters.AddWithValue("@end_detail", bookingDetail.EndDate);
-                    command.Parameters.AddWithValue("@recuurence",bookingDetail.Recurrence);
-                    command.Parameters.AddWithValue("@additional_details", bookingDetail.AdditionalDetails);
+                    command.Parameters.AddWithValue("@start_date", bookingDetail.StartDate);
+                    command.Parameters.AddWithValue("@end_date", bookingDetail.EndDate);
+                    command.Parameters.AddWithValue("@recurrence", bookingDetail.Recurrence);
+                    command.Parameters.AddWithValue("@additional_details", bookingDetail.AdditionalDetails ?? "");
+                    command.Parameters.AddWithValue("@status", "Pending");
                     connection.Open();
                     command.ExecuteNonQuery();
                     connection.Close();
@@ -68,6 +65,7 @@ namespace BookingManagement.ModelViews
                             EndDate = reader.GetDateTime(7),
                             Recurrence = reader.GetString(8),
                             AdditionalDetails = reader.GetString(9),
+                            Status = reader.GetString(10),
                         };
                         BookingDetails.Add(bookingDetails);
                     }

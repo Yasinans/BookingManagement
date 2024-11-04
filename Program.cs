@@ -13,7 +13,8 @@ namespace BookingManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ClientForm());
+            BookingManagement.Form = new ClientForm();
+            Application.Run(BookingManagement.Form);
         }
     }
 }

@@ -46,11 +46,12 @@ namespace BookingManagement
             // HomeLayoutPanel
             // 
             this.HomeLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HomeLayoutPanel.BackColor = System.Drawing.Color.Transparent;
             this.HomeLayoutPanel.ColumnCount = 5;
-            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 336F));
-            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 522F));
-            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 286F));
-            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 537F));
+            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
+            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 348F));
+            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
+            this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 358F));
             this.HomeLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.HomeLayoutPanel.Controls.Add(this.BookFacilityButton, 1, 0);
             this.HomeLayoutPanel.Controls.Add(this.BookLabel, 1, 1);
@@ -58,14 +59,13 @@ namespace BookingManagement
             this.HomeLayoutPanel.Controls.Add(this.ViewScheduleButton, 3, 0);
             this.HomeLayoutPanel.Controls.Add(this.ScheduleLabel, 3, 1);
             this.HomeLayoutPanel.Controls.Add(this.ScheduleDescriptionLabel, 3, 2);
-            this.HomeLayoutPanel.Location = new System.Drawing.Point(0, 175);
-            this.HomeLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HomeLayoutPanel.Location = new System.Drawing.Point(0, 114);
             this.HomeLayoutPanel.Name = "HomeLayoutPanel";
             this.HomeLayoutPanel.RowCount = 3;
-            this.HomeLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 349F));
+            this.HomeLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 227F));
             this.HomeLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.74194F));
-            this.HomeLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 198F));
-            this.HomeLayoutPanel.Size = new System.Drawing.Size(2025, 598);
+            this.HomeLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.HomeLayoutPanel.Size = new System.Drawing.Size(1350, 389);
             this.HomeLayoutPanel.TabIndex = 15;
             // 
             // BookFacilityButton
@@ -78,11 +78,11 @@ namespace BookingManagement
             this.BookFacilityButton.ImageRotate = 0F;
             this.BookFacilityButton.ImageSize = new System.Drawing.Size(342, 210);
             this.BookFacilityButton.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.BookFacilityButton.Location = new System.Drawing.Point(340, 5);
-            this.BookFacilityButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BookFacilityButton.Location = new System.Drawing.Point(227, 3);
             this.BookFacilityButton.Name = "BookFacilityButton";
             this.BookFacilityButton.PressedState.ImageSize = new System.Drawing.Size(342, 210);
-            this.BookFacilityButton.Size = new System.Drawing.Size(513, 339);
+            this.BookFacilityButton.ShadowDecoration.BorderRadius = 30;
+            this.BookFacilityButton.Size = new System.Drawing.Size(342, 220);
             this.BookFacilityButton.TabIndex = 3;
             // 
             // BookLabel
@@ -90,8 +90,7 @@ namespace BookingManagement
             this.BookLabel.AutoSize = true;
             this.BookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.BookLabel.Location = new System.Drawing.Point(340, 349);
-            this.BookLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BookLabel.Location = new System.Drawing.Point(227, 227);
             this.BookLabel.Name = "BookLabel";
             this.BookLabel.Size = new System.Drawing.Size(153, 33);
             this.BookLabel.TabIndex = 1;
@@ -103,8 +102,7 @@ namespace BookingManagement
             this.BookDescriptionLabel.AutoSize = true;
             this.BookDescriptionLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookDescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.BookDescriptionLabel.Location = new System.Drawing.Point(340, 400);
-            this.BookDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.BookDescriptionLabel.Location = new System.Drawing.Point(227, 260);
             this.BookDescriptionLabel.Name = "BookDescriptionLabel";
             this.BookDescriptionLabel.Size = new System.Drawing.Size(291, 58);
             this.BookDescriptionLabel.TabIndex = 5;
@@ -121,11 +119,10 @@ namespace BookingManagement
             this.ViewScheduleButton.ImageRotate = 0F;
             this.ViewScheduleButton.ImageSize = new System.Drawing.Size(342, 210);
             this.ViewScheduleButton.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.ViewScheduleButton.Location = new System.Drawing.Point(1148, 5);
-            this.ViewScheduleButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ViewScheduleButton.Location = new System.Drawing.Point(766, 3);
             this.ViewScheduleButton.Name = "ViewScheduleButton";
             this.ViewScheduleButton.PressedState.ImageSize = new System.Drawing.Size(342, 210);
-            this.ViewScheduleButton.Size = new System.Drawing.Size(513, 318);
+            this.ViewScheduleButton.Size = new System.Drawing.Size(342, 220);
             this.ViewScheduleButton.TabIndex = 4;
             // 
             // ScheduleLabel
@@ -133,8 +130,7 @@ namespace BookingManagement
             this.ScheduleLabel.AutoSize = true;
             this.ScheduleLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScheduleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.ScheduleLabel.Location = new System.Drawing.Point(1148, 349);
-            this.ScheduleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ScheduleLabel.Location = new System.Drawing.Point(766, 227);
             this.ScheduleLabel.Name = "ScheduleLabel";
             this.ScheduleLabel.Size = new System.Drawing.Size(166, 33);
             this.ScheduleLabel.TabIndex = 7;
@@ -146,12 +142,11 @@ namespace BookingManagement
             this.ScheduleDescriptionLabel.AutoSize = true;
             this.ScheduleDescriptionLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScheduleDescriptionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.ScheduleDescriptionLabel.Location = new System.Drawing.Point(1148, 400);
-            this.ScheduleDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ScheduleDescriptionLabel.Location = new System.Drawing.Point(766, 260);
             this.ScheduleDescriptionLabel.Name = "ScheduleDescriptionLabel";
-            this.ScheduleDescriptionLabel.Size = new System.Drawing.Size(291, 58);
+            this.ScheduleDescriptionLabel.Size = new System.Drawing.Size(317, 58);
             this.ScheduleDescriptionLabel.TabIndex = 8;
-            this.ScheduleDescriptionLabel.Text = "Auditorium, gym, computer labs, \nmeeting rooms, etc";
+            this.ScheduleDescriptionLabel.Text = "View recent and upcoming booking schedules";
             this.ScheduleDescriptionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HomeLabel
@@ -161,23 +156,21 @@ namespace BookingManagement
             this.HomeLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
             this.HomeLabel.Location = new System.Drawing.Point(0, 0);
-            this.HomeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HomeLabel.Name = "HomeLabel";
-            this.HomeLabel.Size = new System.Drawing.Size(2025, 175);
+            this.HomeLabel.Size = new System.Drawing.Size(1350, 114);
             this.HomeLabel.TabIndex = 16;
             this.HomeLabel.Text = "How can we help you today?";
             this.HomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HomePanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.HomeLabel);
             this.Controls.Add(this.HomeLayoutPanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "HomePanel";
-            this.Size = new System.Drawing.Size(2025, 774);
+            this.Size = new System.Drawing.Size(1350, 503);
             this.HomeLayoutPanel.ResumeLayout(false);
             this.HomeLayoutPanel.PerformLayout();
             this.ResumeLayout(false);

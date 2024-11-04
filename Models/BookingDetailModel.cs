@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BookingManagement.Models
 {
-    internal class BookingDetailModel
+    public class BookingDetailModel
     {
         public int Id {  get; set; }
         public string Name { get; set; }
@@ -19,5 +16,7 @@ namespace BookingManagement.Models
         public int VenueId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+
+        public string Status { get; set; }
     }
 }

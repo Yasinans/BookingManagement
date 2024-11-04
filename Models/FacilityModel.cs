@@ -11,6 +11,6 @@ namespace BookingManagement.Models
         public int Id {  get; set; }
         public string FacilityName { get; set; }
         public string Category {  get; set; }
-        public string ImageUrl { get; set; }
+        public string Image { get; set; }
     }
 }

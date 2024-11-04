@@ -36,7 +36,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.nameLabel = new System.Windows.Forms.Label();
-            this.nameInput = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NameInput = new Guna.UI2.WinForms.Guna2TextBox();
             this.touchKeyboard = new TouchKeyboard();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.staffPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -159,7 +159,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.nameLabel);
-            this.flowLayoutPanel1.Controls.Add(this.nameInput);
+            this.flowLayoutPanel1.Controls.Add(this.NameInput);
             this.flowLayoutPanel1.Controls.Add(this.touchKeyboard);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -181,34 +181,34 @@
             this.nameLabel.Text = "Enter your name:";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // nameInput
+            // NameInput
             // 
-            this.nameInput.BorderRadius = 5;
-            this.nameInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.nameInput.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.nameInput.DefaultText = "";
-            this.nameInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.nameInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.nameInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nameInput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.nameInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.nameInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameInput.Font = new System.Drawing.Font("Plus Jakarta Sans SemiBold", 11F);
-            this.nameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.nameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.nameInput.Location = new System.Drawing.Point(153, 54);
-            this.nameInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.nameInput.MaxLength = 50;
-            this.nameInput.Name = "nameInput";
-            this.nameInput.PasswordChar = '\0';
-            this.nameInput.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.nameInput.PlaceholderText = "";
-            this.nameInput.ReadOnly = true;
-            this.nameInput.SelectedText = "";
-            this.nameInput.Size = new System.Drawing.Size(626, 48);
-            this.nameInput.TabIndex = 19;
-            this.nameInput.TextOffset = new System.Drawing.Point(6, -5);
-            this.nameInput.WordWrap = false;
+            this.NameInput.BorderRadius = 5;
+            this.NameInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.NameInput.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameInput.DefaultText = "";
+            this.NameInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.NameInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.NameInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameInput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.NameInput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.NameInput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameInput.Font = new System.Drawing.Font("Plus Jakarta Sans SemiBold", 11F);
+            this.NameInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.NameInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.NameInput.Location = new System.Drawing.Point(153, 54);
+            this.NameInput.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.NameInput.MaxLength = 50;
+            this.NameInput.Name = "NameInput";
+            this.NameInput.PasswordChar = '\0';
+            this.NameInput.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.NameInput.PlaceholderText = "";
+            this.NameInput.ReadOnly = true;
+            this.NameInput.SelectedText = "";
+            this.NameInput.Size = new System.Drawing.Size(626, 48);
+            this.NameInput.TabIndex = 19;
+            this.NameInput.TextOffset = new System.Drawing.Point(6, -5);
+            this.NameInput.WordWrap = false;
             // 
             // touchKeyboard
             // 
@@ -225,7 +225,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.38461F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.61539F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 337F));
             this.tableLayoutPanel2.Controls.Add(this.staffPanel, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.facultyPanel, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.guna2VSeparator1, 0, 0);
@@ -238,8 +238,8 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
@@ -256,10 +256,10 @@
             this.staffPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.staffPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.staffPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.staffPanel.Location = new System.Drawing.Point(37, 354);
+            this.staffPanel.Location = new System.Drawing.Point(36, 347);
             this.staffPanel.Name = "staffPanel";
             this.staffPanel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.staffPanel.Size = new System.Drawing.Size(182, 39);
+            this.staffPanel.Size = new System.Drawing.Size(179, 39);
             this.staffPanel.TabIndex = 16;
             // 
             // staffRadioButton
@@ -271,7 +271,7 @@
             this.staffRadioButton.Location = new System.Drawing.Point(20, 0);
             this.staffRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.staffRadioButton.Name = "staffRadioButton";
-            this.staffRadioButton.Size = new System.Drawing.Size(162, 39);
+            this.staffRadioButton.Size = new System.Drawing.Size(159, 39);
             this.staffRadioButton.TabIndex = 0;
             this.staffRadioButton.TabStop = true;
             this.staffRadioButton.Tag = "Staff";
@@ -287,11 +287,11 @@
             this.facultyPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.facultyPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.facultyPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.facultyPanel.Location = new System.Drawing.Point(37, 300);
+            this.facultyPanel.Location = new System.Drawing.Point(36, 293);
             this.facultyPanel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.facultyPanel.Name = "facultyPanel";
             this.facultyPanel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.facultyPanel.Size = new System.Drawing.Size(182, 44);
+            this.facultyPanel.Size = new System.Drawing.Size(179, 44);
             this.facultyPanel.TabIndex = 11;
             // 
             // facultyRadioButton
@@ -303,7 +303,7 @@
             this.facultyRadioButton.Location = new System.Drawing.Point(20, 0);
             this.facultyRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.facultyRadioButton.Name = "facultyRadioButton";
-            this.facultyRadioButton.Size = new System.Drawing.Size(162, 44);
+            this.facultyRadioButton.Size = new System.Drawing.Size(159, 44);
             this.facultyRadioButton.TabIndex = 1;
             this.facultyRadioButton.TabStop = true;
             this.facultyRadioButton.Tag = "Faculty";
@@ -329,9 +329,9 @@
             this.tableLayoutPanel2.SetColumnSpan(this.DepartmentLayoutPanel, 2);
             this.DepartmentLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DepartmentLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.DepartmentLayoutPanel.Location = new System.Drawing.Point(37, 70);
+            this.DepartmentLayoutPanel.Location = new System.Drawing.Point(36, 63);
             this.DepartmentLayoutPanel.Name = "DepartmentLayoutPanel";
-            this.DepartmentLayoutPanel.Size = new System.Drawing.Size(516, 128);
+            this.DepartmentLayoutPanel.Size = new System.Drawing.Size(517, 128);
             this.DepartmentLayoutPanel.TabIndex = 4;
             this.DepartmentLayoutPanel.WrapContents = false;
             // 
@@ -340,7 +340,7 @@
             this.bookLabel.AutoSize = true;
             this.bookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.bookLabel.Location = new System.Drawing.Point(37, 20);
+            this.bookLabel.Location = new System.Drawing.Point(36, 20);
             this.bookLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.bookLabel.Name = "bookLabel";
             this.bookLabel.Size = new System.Drawing.Size(159, 40);
@@ -353,7 +353,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label1.Location = new System.Drawing.Point(34, 201);
+            this.label1.Location = new System.Drawing.Point(33, 194);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 40);
@@ -369,11 +369,11 @@
             this.studentPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.studentPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(255)))));
             this.studentPanel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.studentPanel.Location = new System.Drawing.Point(37, 244);
+            this.studentPanel.Location = new System.Drawing.Point(36, 237);
             this.studentPanel.Margin = new System.Windows.Forms.Padding(3, 3, 3, 7);
             this.studentPanel.Name = "studentPanel";
             this.studentPanel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.studentPanel.Size = new System.Drawing.Size(182, 46);
+            this.studentPanel.Size = new System.Drawing.Size(179, 46);
             this.studentPanel.TabIndex = 7;
             // 
             // studentRadioButton
@@ -386,7 +386,7 @@
             this.studentRadioButton.Location = new System.Drawing.Point(20, 0);
             this.studentRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.studentRadioButton.Name = "studentRadioButton";
-            this.studentRadioButton.Size = new System.Drawing.Size(162, 46);
+            this.studentRadioButton.Size = new System.Drawing.Size(159, 46);
             this.studentRadioButton.TabIndex = 2;
             this.studentRadioButton.TabStop = true;
             this.studentRadioButton.Tag = "Student";
@@ -407,7 +407,7 @@
             this.proceedButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(174)))), ((int)(((byte)(243)))));
             this.proceedButton.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedButton.ForeColor = System.Drawing.Color.White;
-            this.proceedButton.Location = new System.Drawing.Point(381, 402);
+            this.proceedButton.Location = new System.Drawing.Point(381, 399);
             this.proceedButton.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.proceedButton.Name = "proceedButton";
             this.proceedButton.Size = new System.Drawing.Size(155, 38);
@@ -423,7 +423,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.progressPanel);
-            this.FullName = "BookingStepTwo";
+            this.Name = "BookingStepTwo";
             this.Size = new System.Drawing.Size(1350, 503);
             this.progressPanel.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -453,19 +453,19 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label nameLabel;
-        private Guna.UI2.WinForms.Guna2TextBox nameInput;
         private TouchKeyboard touchKeyboard;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private System.Windows.Forms.Label bookLabel;
-        private System.Windows.Forms.FlowLayoutPanel DepartmentLayoutPanel;
+        public System.Windows.Forms.FlowLayoutPanel DepartmentLayoutPanel;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2GradientPanel studentPanel;
-        private Guna.UI2.WinForms.Guna2GradientPanel facultyPanel;
-        private Guna.UI2.WinForms.Guna2GradientPanel staffPanel;
+        public Guna.UI2.WinForms.Guna2GradientPanel studentPanel;
+        public Guna.UI2.WinForms.Guna2GradientPanel facultyPanel;
+        public Guna.UI2.WinForms.Guna2GradientPanel staffPanel;
         private Guna.UI2.WinForms.Guna2GradientButton proceedButton;
-        private System.Windows.Forms.RadioButton staffRadioButton;
-        private System.Windows.Forms.RadioButton facultyRadioButton;
-        private System.Windows.Forms.RadioButton studentRadioButton;
+        public System.Windows.Forms.RadioButton staffRadioButton;
+        public System.Windows.Forms.RadioButton facultyRadioButton;
+        public System.Windows.Forms.RadioButton studentRadioButton;
+        public Guna.UI2.WinForms.Guna2TextBox NameInput;
     }
 }
