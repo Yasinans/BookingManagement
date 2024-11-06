@@ -12,17 +12,6 @@ namespace BookingManagement.Util
         {
             return ImageUtil.DimmedImage(ImageUtil.RoundCorner(image, 30), 20);
         }
-        public static Image ResizeImage(Image image, int width, int height)
-        {
-            var resizedImage = new Bitmap(width, height);
-            using (var graphics = Graphics.FromImage(resizedImage))
-            {
-                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                graphics.DrawImage(image, 0, 0, width, height);
-            }
-            return resizedImage;
-        }
-
         public static Image DimmedImage(Image image, int dimness)
         {
             float dimFactor = 1f - dimness / 100f;

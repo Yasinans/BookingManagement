@@ -338,9 +338,9 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.260575F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.07259F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.75681F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.DetailsLabel, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.RequesterLabel, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.guna2VSeparator1, 0, 0);
@@ -350,7 +350,7 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 77F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 210F));
@@ -364,7 +364,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.DetailsLabel, 2);
             this.DetailsLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DetailsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.DetailsLabel.Location = new System.Drawing.Point(76, 172);
+            this.DetailsLabel.Location = new System.Drawing.Point(65, 161);
             this.DetailsLabel.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.DetailsLabel.Name = "DetailsLabel";
             this.tableLayoutPanel2.SetRowSpan(this.DetailsLabel, 2);
@@ -378,7 +378,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.RequesterLabel, 2);
             this.RequesterLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RequesterLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.RequesterLabel.Location = new System.Drawing.Point(76, 71);
+            this.RequesterLabel.Location = new System.Drawing.Point(65, 60);
             this.RequesterLabel.Margin = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.RequesterLabel.Name = "RequesterLabel";
             this.RequesterLabel.Size = new System.Drawing.Size(0, 24);
@@ -403,7 +403,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.label5, 2);
             this.label5.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label5.Location = new System.Drawing.Point(34, 20);
+            this.label5.Location = new System.Drawing.Point(23, 20);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(280, 40);
@@ -417,7 +417,7 @@
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.guna2Separator1.FillStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.guna2Separator1.FillThickness = 2;
-            this.guna2Separator1.Location = new System.Drawing.Point(34, 151);
+            this.guna2Separator1.Location = new System.Drawing.Point(23, 140);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(462, 10);
             this.guna2Separator1.TabIndex = 4;

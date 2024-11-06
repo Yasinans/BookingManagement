@@ -39,7 +39,7 @@
             this.bookingStepOne = new BookingForm.BookingStepOne();
             this.bookingStepTwo = new BookingForm.BookingStepTwo();
             this.bookingStepThree = new BookingForm.BookingStepThree();
-            this.bookingStepFour = new  BookingForm.BookingStepFour();
+            this.bookingStepFour = new BookingForm.BookingStepFour();
             this.bookingFinal = new BookingForm.BookingFinal();
             this.scheduleTwo = new ScheduleForm.ScheduleTwo();
             this.homePanel = new HomePanel();
@@ -227,6 +227,7 @@
             this.Controls.Add(this.bookingStepTwo);
             this.Controls.Add(this.bookingStepOne);
             this.Controls.Add(this.homePanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Controls.Add(this.clientFooter);
             this.Controls.Add(this.headerPanel);
             this.Name = "ClientForm";

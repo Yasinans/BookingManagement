@@ -21,10 +21,6 @@ namespace BookingManagement
             this.CardButton.Click += OnButtonClick;
 
         }
-        public string GetFacilityName()
-        {
-            return BookLabel.Text;
-        }
         private void OnButtonClick(Object obj, EventArgs e)
         {
             BookingManagement.Form.CurrentFacility = (int)this.Tag;
