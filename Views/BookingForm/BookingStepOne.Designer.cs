@@ -53,6 +53,7 @@
             // facilityPanel
             // 
             this.facilityPanel.AutoScroll = true;
+            this.facilityPanel.AutoSize = true;
             this.facilityPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.facilityPanel.Location = new System.Drawing.Point(0, 120);
             this.facilityPanel.Name = "facilityPanel";
@@ -125,6 +126,7 @@
             this.CategoryPanel.ResumeLayout(false);
             this.CategoryPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

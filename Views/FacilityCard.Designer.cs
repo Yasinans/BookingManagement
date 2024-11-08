@@ -51,9 +51,10 @@ namespace BookingManagement
             this.BookFacilityImage.ImageSize = new System.Drawing.Size(342, 210);
             this.BookFacilityImage.ImeMode = System.Windows.Forms.ImeMode.On;
             this.BookFacilityImage.Location = new System.Drawing.Point(0, 0);
+            this.BookFacilityImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BookFacilityImage.Name = "BookFacilityImage";
             this.BookFacilityImage.PressedState.ImageSize = new System.Drawing.Size(342, 210);
-            this.BookFacilityImage.Size = new System.Drawing.Size(355, 220);
+            this.BookFacilityImage.Size = new System.Drawing.Size(532, 338);
             this.BookFacilityImage.TabIndex = 4;
             // 
             // FacilityCardLayout
@@ -65,15 +66,15 @@ namespace BookingManagement
             this.FacilityCardLayout.Controls.Add(this.BookDescription, 0, 1);
             this.FacilityCardLayout.Controls.Add(this.CardButton, 0, 2);
             this.FacilityCardLayout.Controls.Add(this.BookLabel, 0, 0);
-            this.FacilityCardLayout.Location = new System.Drawing.Point(355, 0);
+            this.FacilityCardLayout.Location = new System.Drawing.Point(532, 0);
             this.FacilityCardLayout.Margin = new System.Windows.Forms.Padding(0);
             this.FacilityCardLayout.Name = "FacilityCardLayout";
-            this.FacilityCardLayout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.FacilityCardLayout.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.FacilityCardLayout.RowCount = 3;
             this.FacilityCardLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.FacilityCardLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.FacilityCardLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.FacilityCardLayout.Size = new System.Drawing.Size(497, 220);
+            this.FacilityCardLayout.Size = new System.Drawing.Size(746, 338);
             this.FacilityCardLayout.TabIndex = 5;
             // 
             // BookDescription
@@ -81,9 +82,10 @@ namespace BookingManagement
             this.BookDescription.AutoSize = true;
             this.BookDescription.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.BookDescription.Location = new System.Drawing.Point(13, 50);
+            this.BookDescription.Location = new System.Drawing.Point(19, 75);
+            this.BookDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BookDescription.Name = "BookDescription";
-            this.BookDescription.Size = new System.Drawing.Size(264, 81);
+            this.BookDescription.Size = new System.Drawing.Size(399, 120);
             this.BookDescription.TabIndex = 3;
             this.BookDescription.Text = "Current Status:  Booked\r\nBooked by: Test T. Test\r\nBooking Details: Test Descripti" +
     "on";
@@ -105,10 +107,10 @@ namespace BookingManagement
             this.CardButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.CardButton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.CardButton.IndicateFocus = true;
-            this.CardButton.Location = new System.Drawing.Point(13, 146);
-            this.CardButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.CardButton.Location = new System.Drawing.Point(19, 218);
+            this.CardButton.Margin = new System.Windows.Forms.Padding(4, 23, 4, 5);
             this.CardButton.Name = "CardButton";
-            this.CardButton.Size = new System.Drawing.Size(192, 42);
+            this.CardButton.Size = new System.Drawing.Size(288, 65);
             this.CardButton.TabIndex = 4;
             this.CardButton.Text = "Book Now";
             // 
@@ -117,23 +119,24 @@ namespace BookingManagement
             this.BookLabel.AutoSize = true;
             this.BookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.BookLabel.Location = new System.Drawing.Point(13, 10);
-            this.BookLabel.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.BookLabel.Location = new System.Drawing.Point(19, 15);
+            this.BookLabel.Margin = new System.Windows.Forms.Padding(4, 15, 4, 0);
             this.BookLabel.Name = "BookLabel";
-            this.BookLabel.Size = new System.Drawing.Size(133, 40);
+            this.BookLabel.Size = new System.Drawing.Size(199, 60);
             this.BookLabel.TabIndex = 2;
             this.BookLabel.Text = "Facility#1";
             this.BookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FacilityCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.FacilityCardLayout);
             this.Controls.Add(this.BookFacilityImage);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FacilityCard";
-            this.Size = new System.Drawing.Size(852, 220);
+            this.Size = new System.Drawing.Size(1278, 338);
             this.FacilityCardLayout.ResumeLayout(false);
             this.FacilityCardLayout.PerformLayout();
             this.ResumeLayout(false);

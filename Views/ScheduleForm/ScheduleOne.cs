@@ -114,7 +114,7 @@ namespace BookingManagement.ScheduleForm
             facilityCard.Margin = new Padding(0);
             facilityCard.Name = facilityName;
             facilityCard.Tag = id;
-            facilityCard.Size = new Size(714, 220);
+            facilityCard.Size = new Size(900, 220);
             facilityCard.TabIndex = 0;
             this.facilityPanel.Controls.Add(facilityCard);
             return facilityCard;
