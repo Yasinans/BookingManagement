@@ -31,7 +31,7 @@ namespace BookingManagement
             currentDateLabel.Text = DateTime.Now.ToString("MMMM dd, yyyy   h:mm tt");
         }
 
-   
+        
 
         private void InitializePages()
         {
@@ -128,6 +128,11 @@ namespace BookingManagement
             bookingStepFour.AdditionalInput.Text = "";
 
 
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            currentDateLabel.Text = DateTime.Now.ToString("MMMM dd, yyyy   h:mm tt");
         }
 
         private void ReturnButton_Click(object sender, EventArgs e)

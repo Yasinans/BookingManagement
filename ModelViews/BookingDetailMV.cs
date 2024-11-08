@@ -7,7 +7,7 @@ namespace BookingManagement.ModelViews
 {
     internal class BookingDetailMV: Database
     {
-        public List<BookingDetailModel> BookingDetails { get; set; } = new List<BookingDetailModel>();
+        public List<BookingDetailModel> BookingDetails { get; } = new List<BookingDetailModel>();
 
         public BookingDetailMV()
         {

@@ -128,6 +128,7 @@
             // dateTimer
             // 
             this.dateTimer.Interval = 1000;
+            this.dateTimer.Tick += Timer_Tick;
             // 
             // clientFooter
             // 
@@ -230,6 +231,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Controls.Add(this.clientFooter);
             this.Controls.Add(this.headerPanel);
+            this.dateTimer.Enabled = true;
             this.Name = "ClientForm";
             this.Text = "Booking Management";
             this.headerPanel.ResumeLayout(false);

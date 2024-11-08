@@ -7,7 +7,7 @@ namespace BookingManagement.ViewModel
 {
     internal class FacilityMV : Database
     {
-        public List<FacilityModel> Facilities { get; set; } = new List<FacilityModel>();
+        public List<FacilityModel> Facilities { get; } = new List<FacilityModel>();
 
         public FacilityMV()
         {

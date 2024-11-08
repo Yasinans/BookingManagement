@@ -8,7 +8,6 @@ namespace BookingManagement
     public partial class FacilityCard : UserControl
     {
         private bool isBooking;
-        //to be edited for db integration
         public FacilityCard(string facilityName, string description, Image image, bool isBooking)
         {
             this.isBooking = isBooking;

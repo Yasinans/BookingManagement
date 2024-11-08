@@ -8,8 +8,8 @@ namespace BookingManagement.ModelViews
 {
     internal class OptionMV: Database
     {
-        public List<OptionModel> Departments { get; set; } = new List<OptionModel>();
-        public List<OptionModel> Purposes { get; set; } = new List<OptionModel>();
+        public List<OptionModel> Departments { get; } = new List<OptionModel>();
+        public List<OptionModel> Purposes { get; } = new List<OptionModel>();
         public OptionMV()
         {
             LoadDepartments();
