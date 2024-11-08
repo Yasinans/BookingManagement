@@ -91,10 +91,11 @@
             this.progressPanel.Controls.Add(this.guna2ShadowPanel3, 3, 0);
             this.progressPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.progressPanel.Location = new System.Drawing.Point(0, 0);
+            this.progressPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressPanel.Name = "progressPanel";
             this.progressPanel.RowCount = 1;
             this.progressPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.progressPanel.Size = new System.Drawing.Size(1350, 56);
+            this.progressPanel.Size = new System.Drawing.Size(2025, 86);
             this.progressPanel.TabIndex = 1;
             // 
             // guna2ShadowPanel4
@@ -102,13 +103,13 @@
             this.guna2ShadowPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(920, 19);
-            this.guna2ShadowPanel4.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel4.Location = new System.Drawing.Point(1378, 30);
+            this.guna2ShadowPanel4.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
             this.guna2ShadowPanel4.Radius = 2;
             this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel4.ShadowDepth = 0;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel4.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel4.TabIndex = 3;
             // 
             // guna2ShadowPanel2
@@ -116,13 +117,13 @@
             this.guna2ShadowPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(245, 19);
-            this.guna2ShadowPanel2.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(367, 30);
+            this.guna2ShadowPanel2.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 2;
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel2.ShadowDepth = 0;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel2.TabIndex = 1;
             // 
             // guna2ShadowPanel1
@@ -130,13 +131,13 @@
             this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(118)))), ((int)(((byte)(236)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(470, 19);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(704, 30);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 2;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel1.ShadowDepth = 20;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
             // guna2ShadowPanel3
@@ -144,19 +145,20 @@
             this.guna2ShadowPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(221)))), ((int)(((byte)(223)))));
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(695, 19);
-            this.guna2ShadowPanel3.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(1041, 30);
+            this.guna2ShadowPanel3.Margin = new System.Windows.Forms.Padding(30, 5, 30, 5);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.Radius = 2;
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(214)))));
             this.guna2ShadowPanel3.ShadowDepth = 0;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(185, 17);
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(277, 26);
             this.guna2ShadowPanel3.TabIndex = 2;
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 56);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 86);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -166,8 +168,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer1.Size = new System.Drawing.Size(1350, 447);
-            this.splitContainer1.SplitterDistance = 755;
+            this.splitContainer1.Size = new System.Drawing.Size(2025, 688);
+            this.splitContainer1.SplitterDistance = 1132;
+            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 2;
             // 
             // flowLayoutPanel1
@@ -191,9 +194,10 @@
             this.flowLayoutPanel1.Controls.Add(this.label9);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(150, 0, 0, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(755, 447);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(225, 0, 0, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1132, 688);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // nameLabel
@@ -202,10 +206,10 @@
             this.flowLayoutPanel1.SetFlowBreak(this.nameLabel, true);
             this.nameLabel.Font = new System.Drawing.Font("Plus Jakarta Sans", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.nameLabel.Location = new System.Drawing.Point(150, 0);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
+            this.nameLabel.Location = new System.Drawing.Point(225, 0);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 15);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(212, 50);
+            this.nameLabel.Size = new System.Drawing.Size(318, 77);
             this.nameLabel.TabIndex = 18;
             this.nameLabel.Text = "Date of Use:";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,10 +219,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label1.Location = new System.Drawing.Point(150, 60);
+            this.label1.Location = new System.Drawing.Point(225, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 37);
+            this.label1.Size = new System.Drawing.Size(258, 57);
             this.label1.TabIndex = 19;
             this.label1.Text = "         Start Date:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,10 +233,10 @@
             this.flowLayoutPanel1.SetFlowBreak(this.label2, true);
             this.label2.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label2.Location = new System.Drawing.Point(150, 97);
+            this.label2.Location = new System.Drawing.Point(225, 149);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(641, 26);
+            this.label2.Size = new System.Drawing.Size(962, 40);
             this.label2.TabIndex = 21;
             this.label2.Text = "                         Date at which the facility is to be used";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,7 +246,7 @@
             this.StartDateTimePicker.AutoRoundedCorners = true;
             this.StartDateTimePicker.BackColor = System.Drawing.Color.Transparent;
             this.StartDateTimePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.StartDateTimePicker.BorderRadius = 17;
+            this.StartDateTimePicker.BorderRadius = 26;
             this.StartDateTimePicker.BorderThickness = 1;
             this.StartDateTimePicker.Checked = true;
             this.StartDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
@@ -250,15 +254,15 @@
             this.StartDateTimePicker.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.StartDateTimePicker.IndicateFocus = true;
-            this.StartDateTimePicker.Location = new System.Drawing.Point(190, 133);
-            this.StartDateTimePicker.Margin = new System.Windows.Forms.Padding(40, 10, 3, 3);
+            this.StartDateTimePicker.Location = new System.Drawing.Point(285, 204);
+            this.StartDateTimePicker.Margin = new System.Windows.Forms.Padding(60, 15, 4, 5);
             this.StartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.StartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.StartDateTimePicker.Name = "StartDateTimePicker";
             this.StartDateTimePicker.ShadowDecoration.BorderRadius = 17;
             this.StartDateTimePicker.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.StartDateTimePicker.ShadowDecoration.Enabled = true;
-            this.StartDateTimePicker.Size = new System.Drawing.Size(488, 36);
+            this.StartDateTimePicker.Size = new System.Drawing.Size(732, 55);
             this.StartDateTimePicker.TabIndex = 22;
             this.StartDateTimePicker.Value = new System.DateTime(2024, 10, 19, 22, 51, 14, 825);
             this.StartDateTimePicker.ValueChanged += new System.EventHandler(this.StartDateTimePicker_ValueChanged);
@@ -268,10 +272,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label3.Location = new System.Drawing.Point(150, 172);
+            this.label3.Location = new System.Drawing.Point(225, 264);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 37);
+            this.label3.Size = new System.Drawing.Size(258, 57);
             this.label3.TabIndex = 23;
             this.label3.Text = "         End Date:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -282,10 +286,10 @@
             this.flowLayoutPanel1.SetFlowBreak(this.label4, true);
             this.label4.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label4.Location = new System.Drawing.Point(150, 209);
+            this.label4.Location = new System.Drawing.Point(225, 321);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(641, 26);
+            this.label4.Size = new System.Drawing.Size(962, 40);
             this.label4.TabIndex = 24;
             this.label4.Text = "                         Date at which the facility is done using";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -295,7 +299,7 @@
             this.EndDateTimePicker.AutoRoundedCorners = true;
             this.EndDateTimePicker.BackColor = System.Drawing.Color.Transparent;
             this.EndDateTimePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.EndDateTimePicker.BorderRadius = 17;
+            this.EndDateTimePicker.BorderRadius = 26;
             this.EndDateTimePicker.BorderThickness = 1;
             this.EndDateTimePicker.Checked = true;
             this.EndDateTimePicker.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
@@ -303,15 +307,15 @@
             this.EndDateTimePicker.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EndDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.EndDateTimePicker.IndicateFocus = true;
-            this.EndDateTimePicker.Location = new System.Drawing.Point(190, 245);
-            this.EndDateTimePicker.Margin = new System.Windows.Forms.Padding(40, 10, 3, 3);
+            this.EndDateTimePicker.Location = new System.Drawing.Point(285, 376);
+            this.EndDateTimePicker.Margin = new System.Windows.Forms.Padding(60, 15, 4, 5);
             this.EndDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.EndDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.EndDateTimePicker.Name = "EndDateTimePicker";
             this.EndDateTimePicker.ShadowDecoration.BorderRadius = 17;
             this.EndDateTimePicker.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.EndDateTimePicker.ShadowDecoration.Enabled = true;
-            this.EndDateTimePicker.Size = new System.Drawing.Size(488, 36);
+            this.EndDateTimePicker.Size = new System.Drawing.Size(732, 55);
             this.EndDateTimePicker.TabIndex = 25;
             this.EndDateTimePicker.Value = new System.DateTime(2024, 10, 19, 22, 51, 14, 825);
             this.EndDateTimePicker.ValueChanged += new System.EventHandler(this.EndDateTimePicker_ValueChanged);
@@ -322,10 +326,10 @@
             this.flowLayoutPanel1.SetFlowBreak(this.label5, true);
             this.label5.Font = new System.Drawing.Font("Plus Jakarta Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label5.Location = new System.Drawing.Point(150, 284);
+            this.label5.Location = new System.Drawing.Point(225, 436);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(641, 62);
+            this.label5.Size = new System.Drawing.Size(962, 95);
             this.label5.TabIndex = 26;
             this.label5.Text = "Time of Use:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,10 +339,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label6.Location = new System.Drawing.Point(150, 346);
+            this.label6.Location = new System.Drawing.Point(225, 531);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 37);
+            this.label6.Size = new System.Drawing.Size(214, 57);
             this.label6.TabIndex = 27;
             this.label6.Text = "         Start Time:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -369,9 +373,10 @@
             "10",
             "11",
             "12"});
-            this.StartHourComboBox.Location = new System.Drawing.Point(296, 349);
+            this.StartHourComboBox.Location = new System.Drawing.Point(443, 536);
+            this.StartHourComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.StartHourComboBox.Name = "StartHourComboBox";
-            this.StartHourComboBox.Size = new System.Drawing.Size(80, 36);
+            this.StartHourComboBox.Size = new System.Drawing.Size(118, 36);
             this.StartHourComboBox.StartIndex = 0;
             this.StartHourComboBox.TabIndex = 28;
             this.StartHourComboBox.TextOffset = new System.Drawing.Point(2, 0);
@@ -451,12 +456,14 @@
             "57",
             "58",
             "59"});
-            this.StartMinuteComboBox.Location = new System.Drawing.Point(382, 349);
+            this.StartMinuteComboBox.Location = new System.Drawing.Point(569, 536);
+            this.StartMinuteComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.StartMinuteComboBox.Name = "StartMinuteComboBox";
-            this.StartMinuteComboBox.Size = new System.Drawing.Size(84, 36);
+            this.StartMinuteComboBox.Size = new System.Drawing.Size(124, 36);
             this.StartMinuteComboBox.StartIndex = 0;
             this.StartMinuteComboBox.TabIndex = 29;
             this.StartMinuteComboBox.TextOffset = new System.Drawing.Point(2, 0);
+            this.StartMinuteComboBox.SelectedIndexChanged += new System.EventHandler(this.TimeOfUse_Changed);
             // 
             // DComboBox
             // 
@@ -475,22 +482,24 @@
             this.DComboBox.Items.AddRange(new object[] {
             "AM",
             "PM"});
-            this.DComboBox.Location = new System.Drawing.Point(472, 349);
+            this.DComboBox.Location = new System.Drawing.Point(701, 536);
+            this.DComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DComboBox.Name = "DComboBox";
-            this.DComboBox.Size = new System.Drawing.Size(79, 36);
+            this.DComboBox.Size = new System.Drawing.Size(116, 36);
             this.DComboBox.StartIndex = 0;
             this.DComboBox.TabIndex = 30;
             this.DComboBox.TextOffset = new System.Drawing.Point(2, 0);
+            this.DComboBox.SelectedIndexChanged += new System.EventHandler(this.TimeOfUse_Changed);
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label7.Location = new System.Drawing.Point(150, 388);
+            this.label7.Location = new System.Drawing.Point(225, 588);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 37);
+            this.label7.Size = new System.Drawing.Size(214, 57);
             this.label7.TabIndex = 31;
             this.label7.Text = "         Duration     :";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -521,22 +530,24 @@
             "10",
             "11",
             "12"});
-            this.DurationHourComboBox.Location = new System.Drawing.Point(296, 391);
+            this.DurationHourComboBox.Location = new System.Drawing.Point(443, 593);
+            this.DurationHourComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DurationHourComboBox.Name = "DurationHourComboBox";
-            this.DurationHourComboBox.Size = new System.Drawing.Size(80, 36);
+            this.DurationHourComboBox.Size = new System.Drawing.Size(118, 36);
             this.DurationHourComboBox.StartIndex = 0;
             this.DurationHourComboBox.TabIndex = 32;
             this.DurationHourComboBox.TextOffset = new System.Drawing.Point(2, 0);
+            this.DurationHourComboBox.SelectedIndexChanged += new System.EventHandler(this.TimeOfUse_Changed);
             // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label8.Location = new System.Drawing.Point(379, 388);
+            this.label8.Location = new System.Drawing.Point(565, 588);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 37);
+            this.label8.Size = new System.Drawing.Size(90, 57);
             this.label8.TabIndex = 34;
             this.label8.Text = "hours";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -615,22 +626,24 @@
             "57",
             "58",
             "59"});
-            this.DurationMinuteComboBox.Location = new System.Drawing.Point(442, 391);
+            this.DurationMinuteComboBox.Location = new System.Drawing.Point(659, 593);
+            this.DurationMinuteComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DurationMinuteComboBox.Name = "DurationMinuteComboBox";
-            this.DurationMinuteComboBox.Size = new System.Drawing.Size(84, 36);
+            this.DurationMinuteComboBox.Size = new System.Drawing.Size(124, 36);
             this.DurationMinuteComboBox.StartIndex = 0;
             this.DurationMinuteComboBox.TabIndex = 33;
             this.DurationMinuteComboBox.TextOffset = new System.Drawing.Point(2, 0);
+            this.DurationMinuteComboBox.SelectedIndexChanged += new System.EventHandler(this.TimeOfUse_Changed);
             // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(37)))));
-            this.label9.Location = new System.Drawing.Point(529, 388);
+            this.label9.Location = new System.Drawing.Point(787, 588);
             this.label9.Margin = new System.Windows.Forms.Padding(0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 37);
+            this.label9.Size = new System.Drawing.Size(110, 57);
             this.label9.TabIndex = 35;
             this.label9.Text = "minutes";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -649,14 +662,15 @@
             this.tableLayoutPanel2.Controls.Add(this.proceedButton, 2, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(591, 447);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(887, 688);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // guna2VSeparator1
@@ -664,11 +678,11 @@
             this.guna2VSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
             this.guna2VSeparator1.FillStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.guna2VSeparator1.FillThickness = 2;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(3, 15);
-            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.guna2VSeparator1.Location = new System.Drawing.Point(4, 23);
+            this.guna2VSeparator1.Margin = new System.Windows.Forms.Padding(4, 23, 4, 5);
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.tableLayoutPanel2.SetRowSpan(this.guna2VSeparator1, 5);
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 412);
+            this.guna2VSeparator1.Size = new System.Drawing.Size(15, 634);
             this.guna2VSeparator1.TabIndex = 0;
             // 
             // bookLabel
@@ -676,10 +690,10 @@
             this.bookLabel.AutoSize = true;
             this.bookLabel.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.bookLabel.Location = new System.Drawing.Point(40, 20);
-            this.bookLabel.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.bookLabel.Location = new System.Drawing.Point(59, 31);
+            this.bookLabel.Margin = new System.Windows.Forms.Padding(4, 31, 4, 0);
             this.bookLabel.Name = "bookLabel";
-            this.bookLabel.Size = new System.Drawing.Size(149, 40);
+            this.bookLabel.Size = new System.Drawing.Size(225, 60);
             this.bookLabel.TabIndex = 3;
             this.bookLabel.Text = "Recurrence";
             this.bookLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -692,10 +706,11 @@
             this.flowLayoutPanel2.Controls.Add(this.MonthlyRadioButton);
             this.flowLayoutPanel2.Controls.Add(this.YearlyRadioButton);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(40, 63);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(59, 96);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(548, 72);
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 23, 0, 0);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(824, 111);
             this.flowLayoutPanel2.TabIndex = 4;
             // 
             // DailyRadioButton
@@ -714,11 +729,11 @@
             this.DailyRadioButton.FillColor = System.Drawing.Color.Transparent;
             this.DailyRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
             this.DailyRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.DailyRadioButton.Location = new System.Drawing.Point(20, 18);
-            this.DailyRadioButton.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.DailyRadioButton.Location = new System.Drawing.Point(30, 28);
+            this.DailyRadioButton.Margin = new System.Windows.Forms.Padding(30, 5, 4, 5);
             this.DailyRadioButton.Name = "DailyRadioButton";
-            this.DailyRadioButton.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.DailyRadioButton.Size = new System.Drawing.Size(64, 36);
+            this.DailyRadioButton.Padding = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            this.DailyRadioButton.Size = new System.Drawing.Size(82, 50);
             this.DailyRadioButton.TabIndex = 7;
             this.DailyRadioButton.Text = "Daily";
             this.DailyRadioButton.Click += new System.EventHandler(this.DailyRadioButton_Click);
@@ -738,11 +753,11 @@
             this.WeeklyRadioButton.FillColor = System.Drawing.Color.Transparent;
             this.WeeklyRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
             this.WeeklyRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.WeeklyRadioButton.Location = new System.Drawing.Point(92, 18);
-            this.WeeklyRadioButton.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.WeeklyRadioButton.Location = new System.Drawing.Point(124, 28);
+            this.WeeklyRadioButton.Margin = new System.Windows.Forms.Padding(8, 5, 4, 5);
             this.WeeklyRadioButton.Name = "WeeklyRadioButton";
-            this.WeeklyRadioButton.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.WeeklyRadioButton.Size = new System.Drawing.Size(79, 36);
+            this.WeeklyRadioButton.Padding = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            this.WeeklyRadioButton.Size = new System.Drawing.Size(105, 50);
             this.WeeklyRadioButton.TabIndex = 8;
             this.WeeklyRadioButton.Text = "Weekly";
             this.WeeklyRadioButton.Click += new System.EventHandler(this.WeeklyRadioButton_Click);
@@ -762,11 +777,11 @@
             this.MonthlyRadioButton.FillColor = System.Drawing.Color.Transparent;
             this.MonthlyRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
             this.MonthlyRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.MonthlyRadioButton.Location = new System.Drawing.Point(179, 18);
-            this.MonthlyRadioButton.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.MonthlyRadioButton.Location = new System.Drawing.Point(241, 28);
+            this.MonthlyRadioButton.Margin = new System.Windows.Forms.Padding(8, 5, 4, 5);
             this.MonthlyRadioButton.Name = "MonthlyRadioButton";
-            this.MonthlyRadioButton.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.MonthlyRadioButton.Size = new System.Drawing.Size(82, 36);
+            this.MonthlyRadioButton.Padding = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            this.MonthlyRadioButton.Size = new System.Drawing.Size(110, 50);
             this.MonthlyRadioButton.TabIndex = 9;
             this.MonthlyRadioButton.Text = "Monthly";
             this.MonthlyRadioButton.Click += new System.EventHandler(this.MonthlyRadioButton_Click);
@@ -786,11 +801,11 @@
             this.YearlyRadioButton.FillColor = System.Drawing.Color.Transparent;
             this.YearlyRadioButton.Font = new System.Drawing.Font("Plus Jakarta Sans", 9F);
             this.YearlyRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.YearlyRadioButton.Location = new System.Drawing.Point(269, 18);
-            this.YearlyRadioButton.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
+            this.YearlyRadioButton.Location = new System.Drawing.Point(363, 28);
+            this.YearlyRadioButton.Margin = new System.Windows.Forms.Padding(8, 5, 4, 5);
             this.YearlyRadioButton.Name = "YearlyRadioButton";
-            this.YearlyRadioButton.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.YearlyRadioButton.Size = new System.Drawing.Size(71, 36);
+            this.YearlyRadioButton.Padding = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            this.YearlyRadioButton.Size = new System.Drawing.Size(94, 50);
             this.YearlyRadioButton.TabIndex = 10;
             this.YearlyRadioButton.Text = "Yearly";
             this.YearlyRadioButton.Click += new System.EventHandler(this.YearlyRadioButton_Click);
@@ -800,10 +815,10 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.label11.Location = new System.Drawing.Point(40, 148);
-            this.label11.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.label11.Location = new System.Drawing.Point(59, 227);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 15, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 40);
+            this.label11.Size = new System.Drawing.Size(170, 60);
             this.label11.TabIndex = 5;
             this.label11.Text = "Purpose";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -812,10 +827,11 @@
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.PurposePanel, 2);
             this.PurposePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PurposePanel.Location = new System.Drawing.Point(40, 191);
+            this.PurposePanel.Location = new System.Drawing.Point(59, 292);
+            this.PurposePanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PurposePanel.Name = "PurposePanel";
-            this.PurposePanel.Padding = new System.Windows.Forms.Padding(15);
-            this.PurposePanel.Size = new System.Drawing.Size(548, 187);
+            this.PurposePanel.Padding = new System.Windows.Forms.Padding(22, 23, 22, 23);
+            this.PurposePanel.Size = new System.Drawing.Size(824, 290);
             this.PurposePanel.TabIndex = 7;
             // 
             // proceedButton
@@ -831,10 +847,10 @@
             this.proceedButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(174)))), ((int)(((byte)(243)))));
             this.proceedButton.Font = new System.Drawing.Font("Plus Jakarta Sans Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedButton.ForeColor = System.Drawing.Color.White;
-            this.proceedButton.Location = new System.Drawing.Point(416, 395);
-            this.proceedButton.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
+            this.proceedButton.Location = new System.Drawing.Point(625, 608);
+            this.proceedButton.Margin = new System.Windows.Forms.Padding(4, 5, 30, 5);
             this.proceedButton.Name = "proceedButton";
-            this.proceedButton.Size = new System.Drawing.Size(155, 38);
+            this.proceedButton.Size = new System.Drawing.Size(232, 58);
             this.proceedButton.TabIndex = 18;
             this.proceedButton.Text = "Proceed";
             this.proceedButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -847,12 +863,13 @@
             // 
             // BookingStepThree
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.progressPanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BookingStepThree";
-            this.Size = new System.Drawing.Size(1350, 503);
+            this.Size = new System.Drawing.Size(2025, 774);
             this.progressPanel.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

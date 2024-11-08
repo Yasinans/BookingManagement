@@ -154,6 +154,9 @@ namespace BookingManagement
                     previousPage = 3;
                     break;
                 case 5:
+                    previousPage = 0;
+                    ResetForm();
+                    break;
                 case 6:
                     previousPage = 0;
                     break;
